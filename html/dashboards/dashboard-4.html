@@ -1,0 +1,226 @@
+---
+layout: default
+title: Dashboard 4
+customJs:
+- vendor/sparkline.min.js
+- vendor/apexcharts.min.js
+- vendor/chart.min.js
+- config/dashboard-4.js
+customCSS:
+---
+
+<div class="container-fluid mt-4">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active"><i class="feather icon-activity"></i> Dashboard 4.</li>
+    </ol>
+    <div class="row">
+        <div class="col-xl-4">
+            <div class="card bg-primary-gradient">
+                <div class="card-header">
+                    <h3 class="text-white">Stock</h3>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-3">
+                        <div><i class="fas fa fa-long-arrow-alt-up text-success"></i><span
+                                class="text-success text-size-2 text-monospace text-white">0.02%</span></div>
+                        <div class="text-success pl-3 pt-1">
+                            <i class="fas fa fa-long-arrow-alt-up"></i>
+                            <span class="text-monospace text-white"><span class="count">11</span>%</span>
+                            <div class="small text-white">vs last week</div>
+                        </div>
+                    </div>
+                    <div class="spark-1"></div>
+
+                    <div class="text-uppercase text-tracked text-white mt-4 mb-2">Top Locations</div>
+                    <div class="text-lift-up">
+                        <i class="fas fa fa-caret-up text-success"></i>
+                        <span class="mx-1 text-monospace text-white"><span class="count">65</span>%</span>
+                        <a href="#" class="text-white">South Africa</a>
+                    </div>
+                    <div class="text-lift-up opacity-75">
+                        <i class="fas fa fa-caret-down text-danger"></i>
+                        <span class="text-secondary mx-1 text-monospace text-white"><span class="count">14</span>%<span>
+                                <a href="#" class="text-white">USA</a>
+                    </div>
+                </div>
+                <div class="spark-2"></div>
+            </div>
+        </div>
+        <div class="col-xl-8">
+            <div class="card shadow-sm rounded h-100">
+                <div class="card-header bg-white">
+                    <h4>Monthly Users</h4>
+                </div>
+                <div class="card-body p-2">
+                    <div class="table-responsive boxscroll" style="overflow: hidden; outline: none;" tabindex="5000">
+                        <table class="table mb-0">
+                            <tbody>
+                              <tr>
+                                <td class="border-top-0">
+                                  <div class="media"><img src="{{ site.baseurl }}/assets/images/profile/5.jpg"
+                                      class="thumb-sm rounded-circle">
+                                    <div class="media-body ml-2">
+                                      <p class="mb-0">Lana Saurez <span class="badge badge-soft-danger">USA</span></p><span
+                                        class="font-12 text-muted">CEO of facebook</span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="border-bottom border-top-0 text-right">
+                                  <div class="btn-group btn-group-toggle mt-2 mt-lg-0" data-toggle="buttons">
+                                    <label class="btn btn-primary btn-sm waves-effect active">
+                                      <input type="radio" name="options" id="genderoption1" checked> <i
+                                        class="feather icon-message-circle"></i> Chat
+                                    </label>
+                                    <label class="btn btn-primary btn-sm waves-effect">
+                                      <input type="radio" name="options" id="genderoption2"> <i
+                                        class="feather icon-phone-call"></i> Call
+                                    </label>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="media"><img src="{{ site.baseurl }}/assets/images/profile/9.jpg"
+                                      class="thumb-sm rounded-circle">
+                                    <div class="media-body ml-2">
+                                      <p class="mb-0">Veronica Smith <span class="badge badge-soft-info">UK</span></p><span
+                                        class="font-12 text-muted">CEO of WhatsApp</span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="border-bottom border-top-0 text-right">
+                                  <div class="btn-group btn-group-toggle mt-2 mt-lg-0" data-toggle="buttons">
+                                    <label class="btn btn-primary btn-sm waves-effect active">
+                                      <input type="radio" name="options" id="genderoption1" checked> <i
+                                        class="feather icon-message-circle"></i> Chat
+                                    </label>
+                                    <label class="btn btn-primary btn-sm waves-effect">
+                                      <input type="radio" name="options" id="genderoption2"> <i
+                                        class="feather icon-phone-call"></i> Call
+                                    </label>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="media"><img src="{{ site.baseurl }}/assets/images/profile/3.jpg"
+                                      class="thumb-sm rounded-circle">
+                                    <div class="media-body ml-2">
+                                      <p class="mb-0">Asta B <span class="badge badge-soft-danger">USA</span></p><span
+                                        class="font-12 text-muted">founder of Google</span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="border-bottom border-top-0 text-right">
+                                  <div class="btn-group btn-group-toggle mt-2 mt-lg-0" data-toggle="buttons">
+                                    <label class="btn btn-primary btn-sm waves-effect active">
+                                      <input type="radio" name="options" id="genderoption1" checked> <i
+                                        class="feather icon-message-circle"></i> Chat
+                                    </label>
+                                    <label class="btn btn-primary btn-sm waves-effect">
+                                      <input type="radio" name="options" id="genderoption2"> <i
+                                        class="feather icon-phone-call"></i> Call
+                                    </label>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="media"><img src="{{ site.baseurl }}/assets/images/profile/7.jpg"
+                                      class="thumb-sm rounded-circle">
+                                    <div class="media-body ml-2">
+                                      <p class="mb-0">Andrew Galaric <span class="badge badge-soft-purple">Canada</span></p><span
+                                        class="font-12 text-muted">CEO of Paypal</span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="border-bottom border-top-0 text-right">
+                                  <div class="btn-group btn-group-toggle mt-2 mt-lg-0" data-toggle="buttons">
+                                    <label class="btn btn-primary btn-sm waves-effect active">
+                                      <input type="radio" name="options" id="genderoption1" checked> <i
+                                        class="feather icon-message-circle"></i> Chat
+                                    </label>
+                                    <label class="btn btn-primary btn-sm waves-effect">
+                                      <input type="radio" name="options" id="genderoption2"> <i
+                                        class="feather icon-phone-call"></i> Call
+                                    </label>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="media"><img src="{{ site.baseurl }}/assets/images/profile/4.jpg"
+                                      class="thumb-sm rounded-circle">
+                                    <div class="media-body ml-2">
+                                      <p class="mb-0">Omarion Parker <span class="badge badge-soft-info">India</span></p><span
+                                        class="font-12 text-muted">CEO of Global Logistics</span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="border-bottom border-top-0 text-right">
+                                  <div class="btn-group btn-group-toggle mt-2 mt-lg-0" data-toggle="buttons">
+                                    <label class="btn btn-primary btn-sm waves-effect active">
+                                      <input type="radio" name="options" id="genderoption1" checked> <i
+                                        class="feather icon-message-circle"></i> Chat
+                                    </label>
+                                    <label class="btn btn-primary btn-sm waves-effect">
+                                      <input type="radio" name="options" id="genderoption2"> <i
+                                        class="feather icon-phone-call"></i> Call
+                                    </label>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="media"><img src="{{ site.baseurl }}/assets/images/demo/user.jpeg"
+                                      class="thumb-sm rounded-circle">
+                                    <div class="media-body ml-2">
+                                      <p class="mb-0">Amstrong Nelh <span class="badge badge-soft-pink">Africa</span></p><span
+                                        class="font-12 text-muted">founder of Hubstack</span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="border-bottom border-top-0 text-right">
+                                  <div class="btn-group btn-group-toggle mt-2 mt-lg-0" data-toggle="buttons">
+                                    <label class="btn btn-primary btn-sm waves-effect active">
+                                      <input type="radio" name="options" id="genderoption1" checked> <i
+                                        class="feather icon-message-circle"></i> Chat
+                                    </label>
+                                    <label class="btn btn-primary btn-sm waves-effect">
+                                      <input type="radio" name="options" id="genderoption2"> <i
+                                        class="feather icon-phone-call"></i> Call
+                                    </label>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="media"><img src="{{ site.baseurl }}/assets/images/profile/12.jpg"
+                                      class="thumb-sm rounded-circle">
+                                    <div class="media-body ml-2">
+                                      <p class="mb-0">Melanie Bark <span class="badge badge-soft-success">USA</span></p><span
+                                        class="font-12 text-muted">Manager of WestBank</span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="border-top-0 text-right">
+                                  <div class="btn-group btn-group-toggle mt-2 mt-lg-0" data-toggle="buttons">
+                                    <label class="btn btn-primary btn-sm waves-effect active">
+                                      <input type="radio" name="options" id="genderoption1" checked> <i
+                                        class="feather icon-message-circle"></i> Chat
+                                    </label>
+                                    <label class="btn btn-primary btn-sm waves-effect">
+                                      <input type="radio" name="options" id="genderoption2"> <i
+                                        class="feather icon-phone-call"></i> Call
+                                    </label>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

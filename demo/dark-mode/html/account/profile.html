@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Profile &middot; Hubstack-AdminPro </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- Dark Mode -->
+    <link rel="stylesheet" href="../../assets/css/style-dark.css">
+    <!-- jquery -->
+    <script src="../../assets/js/vendor/jquery.min.js"></script>
+</head>
+
+<body class="sidebar-open">
+    <div class="loading">
+    <div class="loading-center bs-spinner">
+        <div class="loader-roller mb-3">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+    <div class="page-container animsition">
+        <!-- Main Menu -->
+<div class="topbar shadow">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5 hidden-xs">
+                <div class="logo">
+                    <a href="../../">
+                        <span class="logo-emblem"><img src="../../assets/images/logo-sm.png" /></span>
+                        <span class="logo-full">Hubstack</span>
+                    </a>
+                </div>
+                <a href="javascript:void(0);" class="menu-toggle wave-effect">
+                    <i class="feather icon-menu"></i>
+                </a>
+            </div>
+            <div class="col-md-7 text-right">
+                <ul>
+                    <!-- Profile Menu -->
+                    <li class="btn-group user-account">
+                        <a href="javascript:;" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="user-content">
+                                <div class="user-name">Amstrong Nelh</div>
+                                <div class="user-plan">Software Engineer</div>
+                            </div>
+                            <div class="avatar">
+                                <img src="../../assets/images/demo/user.jpeg" class="rounded-circle" alt="profile" />
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="../../html/account/profile.html" class="animsition-link dropdown-item wave-effect"><i class="feather icon-user"></i> Profile</a></li>
+                            <li><a href="../../html/account/billing.html" class="animsition-link dropdown-item wave-effect"><i class="feather icon-dollar-sign"></i> Billing</a></li>
+                            <li><a href="../../html/authentication/login.html" class="animsition-link dropdown-item wave-effect"><i class="feather icon-log-in"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                    <!-- Offcanvas Menu -->
+                    <li>
+                        <a href="javascript:void(0);" class="btn wave-effect offcanvas-toggle"><i class="feather icon-sliders"></i></a>
+                    </li>
+                    <li class="d-none d-md-block">
+                        <a href="javascript: void();" class="btn wave-effect js-darkSidebar"><i class="feather icon-sun"></i></a>
+                    </li>
+                    <!-- Notification Menu -->
+                    <li class="btn-group notification">
+                        <a href="javascript:;" class="btn dropdown-toggle wave-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="feather icon-bell"><span class="notification-count">5</span></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                                <a href="../../html/extra/notification.html" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="../../assets/images/profile/5.jpg">
+                                    </span>
+                                    <span class="name">Lana Saurez</span>
+                                    <span class="message">The shipment “En Route!”</span>
+                                    <span class="time">3 min ago</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../html/extra/notification.html" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="../../assets/images/profile/9.jpg">
+                                    </span>
+                                    <span class="name">Veronica Smith</span>
+                                    <span class="message">I just made the payment for the stock</span>
+                                    <span class="time">5 min ago</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../html/extra/notification.html" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="../../assets/images/profile/7.jpg">
+                                    </span>
+                                    <span class="name">Andrew Galaric</span>
+                                    <span class="message">Need confirmation on the shipment</span>
+                                    <span class="time">15 min ago</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../html/extra/notification.html" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="../../assets/images/profile/3.jpg">
+                                    </span>
+                                    <span class="name">Asta B</span>
+                                    <span class="message">Can you send me the invoice</span>
+                                    <span class="time">17 min ago</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../html/extra/notification.html" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="../../assets/images/profile/4.jpg">
+                                    </span>
+                                    <span class="name">Omarion Parker</span>
+                                    <span class="message">Thanks for the great service</span>
+                                    <span class="time">45 min ago</span>
+                                </a>
+                            </li>
+                            <li><a href="../../html/extra/notification.html" class="dropdown-item all-notifications wave-effect">See more messages <i class="feather icon-arrow-down"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu-toggle">
+                        <a href="#" class="menu-toggle wave-effect">
+                            <i class="feather icon-menu"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<aside class="offcanvas-menu">
+    <div class="offcanvas-button">
+        <a href="javascript:void(0);" class="btn wave-effect offcanvas-toggle font-20"><span aria-hidden="true">&times;</span></a>
+    </div>
+    <div>
+        <div class="card-header">
+            <h5 class="card-title mb-0"><i class="fa fa-rss"></i> Activity</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>31</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>31</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>30</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>29</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>29</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>29</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>29</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>29</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>29</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>29</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>29</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>29</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+
+        <!-- Main Menu -->
+<div class="sidebar">
+    <div class="logo">
+        <a href="../../index.html">
+            <span class="logo-emblem"><img src="../../assets/images/logo-sm.png" /></span>
+            <span class="logo-full">Hubstack</span>
+        </a>
+    </div>
+    <ul id="sidebarCookie">
+        <li class="title">
+            <i class="feather icon-more-horizontal"></i>
+            <span class="menu-title">Main</span>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed wave-effect" data-parent="#sidebarCookie" data-toggle="collapse" href="#navDashboard" aria-expanded="false" aria-controls="page-dashboard">
+                <i class="feather icon-activity"></i>
+                <span class="menu-title">Dashboard</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navDashboard">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../index.html">
+                            <i class="feather icon-activity"></i>
+                            <span class="menu-title">Dashboard 1</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/dashboards/dashboard-2.html">
+                            <i class="feather icon-activity"></i>
+                            <span class="menu-title">Dashboard 2</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/dashboards/dashboard-3.html">
+                            <i class="feather icon-activity"></i>
+                            <span class="menu-title">Dashboard 3</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/dashboards/dashboard-4.html">
+                            <i class="feather icon-activity"></i>
+                            <span class="menu-title">Dashboard 4</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed wave-effect" data-parent="#sidebarCookie" data-toggle="collapse" href="#navapps" aria-expanded="false" aria-controls="page-apps">
+                <i class="feather icon-grid"></i>
+                <span class="menu-title">Apps</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navapps">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a href="../../html/app/booking.html" class="nav-link wave-effect nav-single">
+                            <i class="feather icon-calendar"></i>
+                            <span class="menu-title">Booking</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../html/app/kanban.html" class="nav-link wave-effect nav-single">
+                            <i class="feather icon-check-square"></i>
+                            <span class="menu-title">Kanban Board</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/app/myFile.html">
+                            <i class="feather icon-file-text"></i>
+                            <span class="menu-title">My Files</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/app/task.html">
+                            <i class="feather icon-file-text"></i>
+                            <span class="menu-title">Tasks</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../html/app/calendar.html" class="nav-link wave-effect nav-single">
+                            <i class="feather icon-calendar"></i>
+                            <span class="menu-title">Full Calendar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect nav-single" href="../../html/charts/vector-map.html">
+                <i class="feather icon-globe"></i>
+                <span class="menu-title">Vector Map</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect nav-single" href="../../html/charts/chart-js.html">
+                <i class="feather icon-pie-chart"></i>
+                <span class="menu-title">Charts Js</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect nav-single" href="../../html/charts/morris-chart.html">
+                <i class="feather icon-bar-chart-2"></i>
+                <span class="menu-title">Morris Charts</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect nav-single" href="../../html/charts/apexchart.html">
+                <i class="feather icon-bar-chart-line"></i>
+                <span class="menu-title">ApexCharts</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect nav-single" href="../../html/charts/sparkline.html">
+                <i class="feather icon-bar-chart-line-"></i>
+                <span class="menu-title">Sparkline</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed" data-parent="#sidebarCookie" data-toggle="collapse" href="#navProfilebox" aria-expanded="false" aria-controls="page-profilebox">
+                <i class="feather icon-users"></i>
+                <span class="menu-title">Account</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navProfilebox">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/account/profile.html">
+                            <i class="feather icon-user"></i>
+                            <span class="menu-title">Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/account/billing.html">
+                            <i class="feather icon-dollar-sign"></i>
+                            <span class="menu-title">Billing</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed" data-parent="#sidebarCookie" data-toggle="collapse" href="#navAuthenticate" aria-expanded="false" aria-controls="page-Authenticate">
+                <i class="feather icon-shield"></i>
+                <span class="menu-title">Authentications</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navAuthenticate">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/authentication/login.html">
+                            <i class="feather icon-log-in"></i>
+                            <span class="menu-title">Login</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/authentication/register.html">
+                            <i class="feather icon-lock"></i>
+                            <span class="menu-title">Register</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/authentication/recover-password.html">
+                            <i class="feather icon-unlock"></i>
+                            <span class="menu-title">Recover password</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/authentication/lock-screen.html">
+                            <i class="feather icon-log-out"></i>
+                            <span class="menu-title">Lock Screen</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed" data-parent="#sidebarCookie" data-toggle="collapse" href="#navMailbox" aria-expanded="false" aria-controls="page-mailbox">
+                <i class="feather icon-mail"></i>
+                <span class="menu-title">Mailbox</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navMailbox">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/app/inbox.html">
+                            <i class="feather icon-inbox"></i>
+                            <span class="menu-title">Inbox</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/app/inbox-email.html">
+                            <i class="feather icon-mail"></i>
+                            <span class="menu-title">Email</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/app/inbox-compose.html">
+                            <i class="feather icon-send"></i>
+                            <span class="menu-title">Compose</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed" data-parent="#sidebarCookie" data-toggle="collapse" href="#navPageLayouts" aria-expanded="false" aria-controls="page-layouts">
+                <i class="feather icon-sidebar"></i>
+                <span class="menu-title">Layouts</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navPageLayouts">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/layouts/minimal.html">
+                            <i class="feather icon-folder-minus"></i>
+                            <span class="menu-title">Minimal Layout</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/layouts/boxed.html">
+                            <i class="feather icon-bold"></i>
+                            <span class="menu-title">Boxed Layout</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/layouts/horizontal.html">
+                            <i class="feather icon-pause"></i>
+                            <span class="menu-title">Horizontal Layout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="title">
+            <i class="feather icon-more-horizontal"></i>
+            <span class="menu-title">Components</span>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed" data-parent="#sidebarCookie" data-toggle="collapse" href="#navElements" aria-expanded="false" aria-controls="page-elements">
+                <i class="feather icon-layout"></i>
+                <span class="menu-title">Elements</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navElements">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/alerts.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Alerts</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/badge.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Badge</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/Button.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Buttons</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/card.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Card</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/dropdowns.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Dropdowns</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/form.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Form</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/grid.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Grid System</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/modal.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Modal</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/navs.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Navs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/popover-tooltips.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Popover & Tooltips</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/progress.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Progress Bar</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/spinners.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Spinners</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/tables.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Tables</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed" data-parent="#sidebarCookie" data-toggle="collapse" href="#navExtra" aria-expanded="false" aria-controls="page-Extra">
+                <i class="feather icon-star"></i>
+                <span class="menu-title">Extra Pages</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navExtra">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/extra/timeline.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Timeline</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/extra/notification.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Notifications</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/extra/message.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Message</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/extra/pricing.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Pricing</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/extra/coming-soon.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Coming soon</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/extra/maintenance.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Maintenance</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/extra/404.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">404 Error</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/extra/500.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">500 Error</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/extra/starter.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Starter</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="title">
+            <i class="feather icon-more-horizontal"></i>
+            <span class="menu-title">Misc</span>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect nav-single" href="../../html/extra/dependency.html">
+                <i class="feather icon-zap"></i>
+                <span class="menu-title">Dependency</span>
+            </a>
+        </li>
+    </ul>
+</div>
+        <main>
+            <div class="container-fluid mt-4">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">Account</li>
+        <li class="breadcrumb-item active">Profile</li>
+    </ol>
+    <div class="row">
+        <div class="col-md-12 col-xl-8">
+            <div class="card tabs white nomargin-top">
+                <div class="card-header">
+                    <ul class="nav nav-pills card-header-pills pl-2">
+                        <li class="nav-item active">
+                            <a href="#overview" class="nav-link active shadow wave-effect mr-2"
+                                data-toggle="tab">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#edit" class="nav-link shadow wave-effect mr-2" data-toggle="tab">Edit</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div id="overview" class="tab-pane active">
+                            <form class="well">
+                                <textarea rows="5" class="form-control shadow-sm"
+                                    placeholder="What's on your mind?"></textarea>
+                                <div class="mt-3">
+                                    <button type="submit"
+                                        class="btn btn-lg btn-primary btn-sm waves-effect shadow-sm border-0 pull-right">Post</button>
+                                    <a href="#" class="btn btn-outline-secondary btn-sm waves-effect shadow-sm border-0"
+                                        data-toggle="tooltip" data-placement="bottom" title=""
+                                        data-original-title="Add a Location"><i class="fa fa-map-marker"></i></a>
+                                    <a href="#" class="btn btn-outline-secondary btn-sm waves-effect shadow-sm border-0"
+                                        data-toggle="tooltip" data-placement="bottom" title=""
+                                        data-original-title="Add Photo"><i class="fa fa-camera"></i></a>
+                                    <a href="#" class="btn btn-outline-secondary btn-sm waves-effect shadow-sm border-0"
+                                        data-toggle="tooltip" data-placement="bottom" title=""
+                                        data-original-title="Add File"><i class="fa fa-file"></i></a>
+                                </div>
+                            </form>
+                            <hr>
+                            <ul class="comment list-unstyled padding-10">
+                                <li class="comment">
+                                    <img class="avatar" src="../../assets/images/demo/user.jpeg">
+                                    <div class="comment-body">
+                                        <a href="#" class="comment-author">
+                                            <small class="text-muted pull-right"> 12 Minutes ago </small>
+                                            <span>Amstrong Nelh</span>
+                                        </a>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                            nibh
+                                            euismod tincidunt laoreet dolore magna aliquam tincidunt erat volutpat
+                                            laoreet
+                                            dolore magna aliquam tincidunt erat volutpat.
+                                        </p>
+                                    </div>
+                                    <ul class="comment-footer d-inline-flex list-inline">
+                                        <li>
+                                            <a href="#" class="text-info"><i class="fa fa-reply"></i> Reply</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-success waves-effect"><i
+                                                    class="fa fa-thumbs-up"></i> Like</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Show All Comments (26)</a>
+                                        </li>
+                                        <li class="pull-right">
+                                            <a href="#" class="text-danger">Delete</a>
+                                        </li>
+                                        <li class="pull-right">
+                                            <a href="#" class="text-primary">Edit</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="comment comment-reply">
+                                    <img class="avatar" src="../../assets/images/profile/12.jpg">
+                                    <div class="comment-body">
+                                        <a href="#" class="comment-author">
+                                            <small class="text-muted pull-right"> 4 Minutes ago </small>
+                                            <span>Melanie Bark</span>
+                                        </a>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy!
+                                            <i class="fa fa-smile-o green"></i>
+                                        </p>
+                                    </div>
+                                    <ul class="comment-footer d-inline-flex list-inline">
+                                        <li>
+                                            <a href="#" class="text-success waves-effect"><i
+                                                    class="fa fa-thumbs-up"></i> Like</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="comment comment-reply">
+                                    <img class="avatar" src="../../assets/images/demo/user.jpeg">
+                                    <div class="comment-body">
+                                        <a href="#" class="comment-author">
+                                            <small class="text-muted pull-right"> a moment ago </small>
+                                            <span>Amstrong Nelh</span>
+                                        </a>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy!
+                                            <i class="fa fa-smile-o green"></i>
+                                        </p>
+                                    </div>
+                                    <ul class="comment-footer d-inline-flex list-inline">
+                                        <li>
+                                            <a href="#" class="text-success waves-effect"><i
+                                                    class="fa fa-thumbs-up"></i> Like</a>
+                                        </li>
+                                        <li class="pull-right">
+                                            <a href="#" class="text-danger">Delete</a>
+                                        </li>
+                                        <li class="pull-right">
+                                            <a href="#" class="text-primary">Edit</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="comment list-unstyled padding-10">
+                                <li class="comment">
+                                    <img class="avatar" src="../../assets/images/profile/12.jpg">
+                                    <div class="comment-body">
+                                        <a href="#" class="comment-author">
+                                            <small class="text-muted pull-right"> 12 Minutes ago </small>
+                                            <span>Melanie Bark</span>
+                                        </a>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                            nibh
+                                            euismod tincidunt laoreet dolore magna aliquam tincidunt erat volutpat
+                                            laoreet
+                                            dolore magna aliquam tincidunt erat volutpat.
+                                        </p>
+                                    </div>
+                                    <ul class="comment-footer d-inline-flex list-inline">
+                                        <li>
+                                            <a href="#" class="text-info"><i class="fa fa-reply"></i> Reply</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-success waves-effect"><i
+                                                    class="fa fa-thumbs-up"></i> Like</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Show All Comments (136)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="comment comment-reply">
+                                    <img class="avatar" src="../../assets/images/profile/12.jpg">
+                                    <div class="comment-body">
+                                        <a href="#" class="comment-author">
+                                            <small class="text-muted pull-right"> 4 Minutes ago </small>
+                                            <span>Melanie Bark</span>
+                                        </a>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy!
+                                            <i class="fa fa-smile-o green"></i>
+                                        </p>
+                                    </div>
+                                    <ul class="comment-footer d-inline-flex list-inline">
+                                        <li>
+                                            <a href="#" class="text-success waves-effect"><i
+                                                    class="fa fa-thumbs-up"></i> Like</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="comment comment-reply">
+                                    <img class="avatar" src="../../assets/images/demo/user.jpeg">
+                                    <div class="comment-body">
+                                        <a href="#" class="comment-author">
+                                            <small class="text-muted pull-right"> 17 moment ago </small>
+                                            <span>Amstrong Nelh</span>
+                                        </a>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy!
+                                            <i class="fa fa-smile-o green"></i>
+                                        </p>
+                                    </div>
+                                    <ul class="comment-footer d-inline-flex list-inline">
+                                        <li>
+                                            <a href="#" class="text-success waves-effect"><i
+                                                    class="fa fa-thumbs-up"></i> Like</a>
+                                        </li>
+                                        <li class="pull-right">
+                                            <a href="#" class="text-danger">Delete</a>
+                                        </li>
+                                        <li class="pull-right">
+                                            <a href="#" class="text-primary">Edit</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Type your message...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary">
+                                                <i class="fa fa-reply"></i> Reply
+                                            </button>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="edit" class="tab-pane">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-actions float-right">
+                                        <div class="dropdown show">
+                                            <a href="#" data-toggle="dropdown" data-display="static">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-more-horizontal align-middle">
+                                                    <circle cx="12" cy="12" r="1"></circle>
+                                                    <circle cx="19" cy="12" r="1"></circle>
+                                                    <circle cx="5" cy="12" r="1"></circle>
+                                                </svg>
+                                            </a>
+
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title mb-0">Private info</h5>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputFirstName">First name</label>
+                                                <input type="text" class="form-control" id="inputFirstName"
+                                                    placeholder="First name">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputLastName">Last name</label>
+                                                <input type="text" class="form-control" id="inputLastName"
+                                                    placeholder="Last name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputEmail4">Email</label>
+                                            <input type="email" class="form-control" id="inputEmail4"
+                                                placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputAddress">Address</label>
+                                            <input type="text" class="form-control" id="inputAddress"
+                                                placeholder="1234 Main St">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputAddress2">Address 2</label>
+                                            <input type="text" class="form-control" id="inputAddress2"
+                                                placeholder="Apartment, studio, or floor">
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputCity">City</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="inputState">State</label>
+                                                <select id="inputState" class="form-control">
+                                                    <option selected="">Choose...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-2">
+                                                <label for="inputZip">Zip</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Save changes</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="inputPasswordCurrent">Current password</label>
+                                            <input type="password" class="form-control" id="inputPasswordCurrent">
+                                            <small><a href="#">Forgot your password?</a></small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPasswordNew">New password</label>
+                                            <input type="password" class="form-control" id="inputPasswordNew">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPasswordNew2">Verify password</label>
+                                            <input type="password" class="form-control" id="inputPasswordNew2">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Save changes</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-xl-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Profile Settings</h5>
+                </div>
+                <div class="author-card pb-3">
+                    <div class="author-card-cover" style="background-image: url('../../assets/images/bg-girl.jpg');">
+                        <a class="btn btn-style-1 btn-white btn-sm waves-effect" href="#" data-toggle="tooltip" title=""
+                            data-original-title="You currently have 290 Reward points to spend"><i
+                                class="fa fa-award text-md"></i>&nbsp;290 points</a>
+                    </div>
+                    <div class="author-card-profile">
+                        <div class="author-card-avatar">
+                            <img src="../../assets/images/demo/user.jpeg" alt="Amstrong Nelh">
+                        </div>
+                        <div class="author-card-details">
+                            <h5 class="author-card-name text-lg">Amstrong Nelh</h5><span
+                                class="author-card-position">Joined February 06, 2017</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wizard">
+                    <nav class="list-group list-group-flush">
+                        <a class="list-group-item active" href="#">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div><i class="fa fa-shopping-bag mr-1 text-muted"></i>
+                                    <div class="d-inline-block font-weight-medium text-uppercase">Orders List</div>
+                                </div><span class="badge badge-secondary">6</span>
+                            </div>
+                        </a><a class="list-group-item" href="#"><i class="fa fa-user text-muted"></i>Profile
+                            Settings</a><a class="list-group-item" href="#"><i
+                                class="fa fa-map-marker text-muted"></i>Addresses</a>
+                        <a class="list-group-item" href="#">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div><i class="fa fa-heart mr-1 text-muted"></i>
+                                    <div class="d-inline-block font-weight-medium text-uppercase">My Wishlist</div>
+                                </div><span class="badge badge-secondary">3</span>
+                            </div>
+                        </a>
+                        <a class="list-group-item" href="#">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div><i class="fa fa-tag mr-1 text-muted"></i>
+                                    <div class="d-inline-block font-weight-medium text-uppercase">My Tickets</div>
+                                </div><span class="badge badge-secondary">4</span>
+                            </div>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0"><i class="fa fa-rss"></i> Activity</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-2">
+                            <time datetime="2014-06-29" class="datebox">
+                                <strong>Jun</strong>
+                                <span>29</span>
+                            </time>
+                        </div>
+                        <div class="col-10">
+                            <h6><a href="#">Lorem ipsum dolor sit amet</a></h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt laoreet dolore magna aliquam tincidunt erat volutpat laoreet dolore magna
+                                aliquam
+                                tincidunt erat volutpat.
+                            </p>
+                        </div>
+                        <div class="col-sm-12">
+                            <hr class="half-margins">
+                        </div>
+                        <div class="col-2">
+                            <time datetime="2014-06-29" class="datebox">
+                                <strong>Jun</strong>
+                                <span>29</span>
+                            </time>
+                        </div>
+                        <div class="col-10">
+                            <h6><a href="#">Sed diam nonummy nibh euismod</a></h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt laoreet dolore magna aliquam tincidunt erat volutpat laoreet dolore magna
+                                aliquam
+                                tincidunt erat volutpat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <footer class="py-4 border-top">
+    <div class="container-fluid">
+        <div class="d-flex align-items-center justify-content-between small">
+            <div class="text-muted">Copyright &copy; Your Website 2020</div>
+            <div>
+                <a href="#">Privacy Policy</a>
+                &middot;
+                <a href="#">Terms &amp; Conditions</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        </main>
+    </div>
+    <!-- Le Javascript -->
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../assets/js/vendor/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/library.min.js"></script>
+    
+    <script src="../../assets/js/core/main.js"></script>
+    <script>
+        // Dark Sidebar Toggle
+        $('.js-darkSidebar').click(function(e) {
+            e.preventDefault();
+            let isDarkCss = $("link[href='../../assets/css/style-dark.css']");
+            if (isDarkCss.length){
+                isDarkCss.remove();
+            }else{
+                $('head').append('<link type="text/css" rel="stylesheet" media="all" href="../../assets/css/style-dark.css">');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Dashboard &middot; Hubstack-AdminPro </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    
+    <link rel="stylesheet" href="../../assets/css/vendor/jquery-jvectormap.css">
+    
+    <link rel="stylesheet" href="../../assets/css/vendor/morris.css">
+    
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- Dark Mode -->
+    <link rel="stylesheet" href="../../assets/css/style-dark.css">
+    <!-- jquery -->
+    <script src="../../assets/js/vendor/jquery.min.js"></script>
+</head>
+
+<body class="sidebar-closed">
+    <div class="loading">
+    <div class="loading-center bs-spinner">
+        <div class="loader-roller mb-3">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+    <div class="page-container animsition">
+        <div>
+            <!-- Main Menu -->
+<div class="topbar shadow">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5 hidden-xs">
+                <div class="logo">
+                    <a href="../../">
+                        <span class="logo-emblem"><img src="../../assets/images/logo-sm.png" /></span>
+                        <span class="logo-full">Hubstack</span>
+                    </a>
+                </div>
+                <a href="javascript:void(0);" class="menu-toggle wave-effect">
+                    <i class="feather icon-menu"></i>
+                </a>
+            </div>
+            <div class="col-md-7 text-right">
+                <ul>
+                    <!-- Profile Menu -->
+                    <li class="btn-group user-account">
+                        <a href="javascript:;" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="user-content">
+                                <div class="user-name">Amstrong Nelh</div>
+                                <div class="user-plan">Software Engineer</div>
+                            </div>
+                            <div class="avatar">
+                                <img src="../../assets/images/demo/user.jpeg" class="rounded-circle" alt="profile" />
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="../../html/account/profile.html" class="animsition-link dropdown-item wave-effect"><i class="feather icon-user"></i> Profile</a></li>
+                            <li><a href="../../html/account/billing.html" class="animsition-link dropdown-item wave-effect"><i class="feather icon-dollar-sign"></i> Billing</a></li>
+                            <li><a href="../../html/authentication/login.html" class="animsition-link dropdown-item wave-effect"><i class="feather icon-log-in"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                    <!-- Offcanvas Menu -->
+                    <li>
+                        <a href="javascript:void(0);" class="btn wave-effect offcanvas-toggle"><i class="feather icon-sliders"></i></a>
+                    </li>
+                    <li class="d-none d-md-block">
+                        <a href="javascript: void();" class="btn wave-effect js-darkSidebar"><i class="feather icon-sun"></i></a>
+                    </li>
+                    <!-- Notification Menu -->
+                    <li class="btn-group notification">
+                        <a href="javascript:;" class="btn dropdown-toggle wave-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="feather icon-bell"><span class="notification-count">5</span></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                                <a href="../../html/extra/notification.html" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="../../assets/images/profile/5.jpg">
+                                    </span>
+                                    <span class="name">Lana Saurez</span>
+                                    <span class="message">The shipment “En Route!”</span>
+                                    <span class="time">3 min ago</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../html/extra/notification.html" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="../../assets/images/profile/9.jpg">
+                                    </span>
+                                    <span class="name">Veronica Smith</span>
+                                    <span class="message">I just made the payment for the stock</span>
+                                    <span class="time">5 min ago</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../html/extra/notification.html" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="../../assets/images/profile/7.jpg">
+                                    </span>
+                                    <span class="name">Andrew Galaric</span>
+                                    <span class="message">Need confirmation on the shipment</span>
+                                    <span class="time">15 min ago</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../html/extra/notification.html" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="../../assets/images/profile/3.jpg">
+                                    </span>
+                                    <span class="name">Asta B</span>
+                                    <span class="message">Can you send me the invoice</span>
+                                    <span class="time">17 min ago</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../html/extra/notification.html" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="../../assets/images/profile/4.jpg">
+                                    </span>
+                                    <span class="name">Omarion Parker</span>
+                                    <span class="message">Thanks for the great service</span>
+                                    <span class="time">45 min ago</span>
+                                </a>
+                            </li>
+                            <li><a href="../../html/extra/notification.html" class="dropdown-item all-notifications wave-effect">See more messages <i class="feather icon-arrow-down"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu-toggle">
+                        <a href="#" class="menu-toggle wave-effect">
+                            <i class="feather icon-menu"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<aside class="offcanvas-menu">
+    <div class="offcanvas-button">
+        <a href="javascript:void(0);" class="btn wave-effect offcanvas-toggle font-20"><span aria-hidden="true">&times;</span></a>
+    </div>
+    <div>
+        <div class="card-header">
+            <h5 class="card-title mb-0"><i class="fa fa-rss"></i> Activity</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>31</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>31</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>30</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>29</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>29</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>29</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>29</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>29</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>29</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>29</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>29</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="half-margins">
+                </div>
+                <div class="col-2">
+                    <time datetime="2014-06-29" class="datebox">
+                        <strong>Jun</strong>
+                        <span>29</span>
+                    </time>
+                </div>
+                <div class="col-10">
+                    <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+
+            <!-- Main Menu -->
+<div class="sidebar">
+    <div class="logo">
+        <a href="../../index.html">
+            <span class="logo-emblem"><img src="../../assets/images/logo-sm.png" /></span>
+            <span class="logo-full">Hubstack</span>
+        </a>
+    </div>
+    <ul id="sidebarCookie">
+        <li class="title">
+            <i class="feather icon-more-horizontal"></i>
+            <span class="menu-title">Main</span>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed wave-effect" data-parent="#sidebarCookie" data-toggle="collapse" href="#navDashboard" aria-expanded="false" aria-controls="page-dashboard">
+                <i class="feather icon-activity"></i>
+                <span class="menu-title">Dashboard</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navDashboard">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../index.html">
+                            <i class="feather icon-activity"></i>
+                            <span class="menu-title">Dashboard 1</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/dashboards/dashboard-2.html">
+                            <i class="feather icon-activity"></i>
+                            <span class="menu-title">Dashboard 2</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/dashboards/dashboard-3.html">
+                            <i class="feather icon-activity"></i>
+                            <span class="menu-title">Dashboard 3</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/dashboards/dashboard-4.html">
+                            <i class="feather icon-activity"></i>
+                            <span class="menu-title">Dashboard 4</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed wave-effect" data-parent="#sidebarCookie" data-toggle="collapse" href="#navapps" aria-expanded="false" aria-controls="page-apps">
+                <i class="feather icon-grid"></i>
+                <span class="menu-title">Apps</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navapps">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a href="../../html/app/booking.html" class="nav-link wave-effect nav-single">
+                            <i class="feather icon-calendar"></i>
+                            <span class="menu-title">Booking</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../html/app/kanban.html" class="nav-link wave-effect nav-single">
+                            <i class="feather icon-check-square"></i>
+                            <span class="menu-title">Kanban Board</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/app/myFile.html">
+                            <i class="feather icon-file-text"></i>
+                            <span class="menu-title">My Files</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/app/task.html">
+                            <i class="feather icon-file-text"></i>
+                            <span class="menu-title">Tasks</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../html/app/calendar.html" class="nav-link wave-effect nav-single">
+                            <i class="feather icon-calendar"></i>
+                            <span class="menu-title">Full Calendar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect nav-single" href="../../html/charts/vector-map.html">
+                <i class="feather icon-globe"></i>
+                <span class="menu-title">Vector Map</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect nav-single" href="../../html/charts/chart-js.html">
+                <i class="feather icon-pie-chart"></i>
+                <span class="menu-title">Charts Js</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect nav-single" href="../../html/charts/morris-chart.html">
+                <i class="feather icon-bar-chart-2"></i>
+                <span class="menu-title">Morris Charts</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect nav-single" href="../../html/charts/apexchart.html">
+                <i class="feather icon-bar-chart-line"></i>
+                <span class="menu-title">ApexCharts</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect nav-single" href="../../html/charts/sparkline.html">
+                <i class="feather icon-bar-chart-line-"></i>
+                <span class="menu-title">Sparkline</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed" data-parent="#sidebarCookie" data-toggle="collapse" href="#navProfilebox" aria-expanded="false" aria-controls="page-profilebox">
+                <i class="feather icon-users"></i>
+                <span class="menu-title">Account</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navProfilebox">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/account/profile.html">
+                            <i class="feather icon-user"></i>
+                            <span class="menu-title">Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/account/billing.html">
+                            <i class="feather icon-dollar-sign"></i>
+                            <span class="menu-title">Billing</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed" data-parent="#sidebarCookie" data-toggle="collapse" href="#navAuthenticate" aria-expanded="false" aria-controls="page-Authenticate">
+                <i class="feather icon-shield"></i>
+                <span class="menu-title">Authentications</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navAuthenticate">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/authentication/login.html">
+                            <i class="feather icon-log-in"></i>
+                            <span class="menu-title">Login</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/authentication/register.html">
+                            <i class="feather icon-lock"></i>
+                            <span class="menu-title">Register</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/authentication/recover-password.html">
+                            <i class="feather icon-unlock"></i>
+                            <span class="menu-title">Recover password</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/authentication/lock-screen.html">
+                            <i class="feather icon-log-out"></i>
+                            <span class="menu-title">Lock Screen</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed" data-parent="#sidebarCookie" data-toggle="collapse" href="#navMailbox" aria-expanded="false" aria-controls="page-mailbox">
+                <i class="feather icon-mail"></i>
+                <span class="menu-title">Mailbox</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navMailbox">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/app/inbox.html">
+                            <i class="feather icon-inbox"></i>
+                            <span class="menu-title">Inbox</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/app/inbox-email.html">
+                            <i class="feather icon-mail"></i>
+                            <span class="menu-title">Email</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/app/inbox-compose.html">
+                            <i class="feather icon-send"></i>
+                            <span class="menu-title">Compose</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed" data-parent="#sidebarCookie" data-toggle="collapse" href="#navPageLayouts" aria-expanded="false" aria-controls="page-layouts">
+                <i class="feather icon-sidebar"></i>
+                <span class="menu-title">Layouts</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navPageLayouts">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/layouts/minimal.html">
+                            <i class="feather icon-folder-minus"></i>
+                            <span class="menu-title">Minimal Layout</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/layouts/boxed.html">
+                            <i class="feather icon-bold"></i>
+                            <span class="menu-title">Boxed Layout</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/layouts/horizontal.html">
+                            <i class="feather icon-pause"></i>
+                            <span class="menu-title">Horizontal Layout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="title">
+            <i class="feather icon-more-horizontal"></i>
+            <span class="menu-title">Components</span>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed" data-parent="#sidebarCookie" data-toggle="collapse" href="#navElements" aria-expanded="false" aria-controls="page-elements">
+                <i class="feather icon-layout"></i>
+                <span class="menu-title">Elements</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navElements">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/alerts.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Alerts</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/badge.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Badge</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/Button.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Buttons</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/card.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Card</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/dropdowns.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Dropdowns</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/form.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Form</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/grid.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Grid System</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/modal.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Modal</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/navs.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Navs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/popover-tooltips.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Popover & Tooltips</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/progress.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Progress Bar</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/spinners.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Spinners</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/elements/tables.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Tables</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed" data-parent="#sidebarCookie" data-toggle="collapse" href="#navExtra" aria-expanded="false" aria-controls="page-Extra">
+                <i class="feather icon-star"></i>
+                <span class="menu-title">Extra Pages</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navExtra">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/extra/timeline.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Timeline</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/extra/notification.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Notifications</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/extra/message.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Message</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/extra/pricing.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Pricing</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/extra/coming-soon.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Coming soon</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/extra/maintenance.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Maintenance</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/extra/404.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">404 Error</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/extra/500.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">500 Error</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="../../html/extra/starter.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Starter</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="title">
+            <i class="feather icon-more-horizontal"></i>
+            <span class="menu-title">Misc</span>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect nav-single" href="../../html/extra/dependency.html">
+                <i class="feather icon-zap"></i>
+                <span class="menu-title">Dependency</span>
+            </a>
+        </li>
+    </ul>
+</div>
+            <main>
+                <div class="container-fluid mt-4">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active"><i class="feather icon-activity"></i> Dashboard 1.</li>
+  </ol>
+  <!-- Dashboard Tiles -->
+  <div class="row">
+    <div class="col-xl-3 col-lg-6">
+      <div class="card-box shadow-sm mt-0 rounded h-100">
+        <div class="text-uppercase text-tracked text-muted mb-2">Weekly Users</div>
+        <div class="d-flex justify-content-between">
+          <div><i class="pe-7s-users"></i> <span class="text-size-2 text-monospace count">321</span>k</div>
+          <div class="text-success pl-3 pt-1">
+            <i class="fas fa fa-long-arrow-alt-up"></i>
+            <span class="text-monospace"><span class="count">81</span>%</span>
+            <div class="small text-muted">vs last week</div>
+          </div>
+        </div>
+        <a href="../../html/dashboards/dashboard-4.html" class="card-box-footer wave-effect">View More <i
+            class="fa fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-6">
+      <div class="card-box shadow-sm mt-0 rounded h-100">
+        <div class="text-uppercase text-tracked text-muted mb-2">Balance</div>
+        <div class="d-flex justify-content-between">
+          <div><i class="fas fa fa-long-arrow-alt-up text-success"></i><span
+              class="text-success text-size-2 text-monospace">0.02%</span></div>
+          <div class="text-success pl-3 pt-1">
+            <i class="fas fa fa-long-arrow-alt-up"></i>
+            <span class="text-monospace"><span class="count">11</span>%</span>
+            <div class="small text-muted">vs last week</div>
+          </div>
+        </div>
+        <a href="../../html/dashboards/dashboard-4.html" class="card-box-footer wave-effect">View More <i
+            class="fa fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-6">
+      <div class="card-box shadow-sm mt-0 rounded h-100">
+        <div class="text-uppercase text-tracked text-muted mb-2">Rate</div>
+        <div class="d-flex justify-content-between">
+          <div class="d-flex align-items-center">
+            <i class="fas fa fa-clock opacity-25 mr-2 text-size-3"></i>
+            <span class="text-size-2 text-monospace">10</span>
+            <span class="text-size-2">m</span>
+            <span class="text-size-2 text-monospace">30</span>
+            <span class="text-size-2">s</span>
+          </div>
+          <div class="text-danger pl-3 pt-1">
+            <i class="fas fa fa-long-arrow-alt-down"></i>
+            <span class="text-monospace"><span class="count">4</span>%</span>
+          </div>
+        </div>
+        <a href="../../html/dashboards/dashboard-4.html" class="card-box-footer wave-effect">View More <i
+            class="fa fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-6">
+      <div class="card-box shadow-sm mt-0 rounded h-100">
+        <div class="text-uppercase text-tracked text-muted mb-2">Top Locations</div>
+        <div class="text-lift-up">
+          <i class="fas fa fa-caret-up text-success"></i>
+          <span class="mx-1 text-monospace"><span class="count">65</span>%</span>
+          <a href="#">South Africa</a>
+        </div>
+        <div class="text-lift-up opacity-75">
+          <i class="fas fa fa-caret-down text-danger"></i>
+          <span class="text-secondary mx-1 text-monospace"><span class="count">14</span>%<span>
+              <a href="#">USA</a>
+        </div>
+        <a href="../../html/dashboards/dashboard-4.html" class="card-box-footer wave-effect">View More <i
+            class="fa fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="card table-inverse mb-4">
+        <div class="card-header bg-white">
+          <i class="feather icon-download text-dark float-right"></i>
+          <h4>Sales Worldwide | <small> 6 Locations</small></h4>
+        </div>
+        <div class="card-body table-slick-inner">
+          <div class="row">
+            <div class="col-xl-8">
+              <div id="world-map" style="height: 400px"></div>
+            </div>
+            <div class="col-xl-4">
+              <div id="hero-donut"></div>
+              <div class="row text-center mt-4">
+                <div class="col-6 border-right">
+                  <div class="h4 font-weight-bold mb-0"><span class="count">28</span>%</div><span
+                    class="small text-gray">Last week</span>
+                </div>
+                <div class="col-6">
+                  <div class="h4 font-weight-bold mb-0"><span class="count">65</span>%</div><span
+                    class="small text-gray">Last month</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-8">
+      <div class="card h-100 mb-4">
+        <div class="card-header bg-white">
+          <h4 class="title">South Africa</h4>
+        </div>
+        <div class="card-body">
+          <div class="text-dark pb-3">Top Sale by States</div>
+          <div class="row">
+            <div class="col-xl-7">
+              <div class="table-slick-inner">
+                <div id="sa-map" style="height: 300px"></div>
+              </div>
+            </div>
+            <div class="col-xl-5 page-todo">
+              <div class="tasks pt-4">
+                <div class="task-list p-0">
+                  <div class="priority default"><span>Sales Revenue</span></div>
+                  <div class="task default last">
+                    <div class="desc">
+                      <div class="title">Western Cape</div>
+                      <div>54,060 items sold this month in the western cape...</div>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              <p><small>Last Month Check</small>
+                <h4><i class="fas fa fa-long-arrow-alt-up"></i> 6.5% (R764,899)</h4>
+              </p>
+              <a href="javascript: void();"
+                class="btn btn-primary bg-default btn-block btn-lg border-0 rounded-0 mt-4 shadow wave-effect"><i
+                  class="fas fa-file-pdf t-plus-1 fa-fw fa-lg"></i> Check full Report</a>
+            </div>
+            <div class="col-xl-12">
+              <div class="row">
+                <div class="col-xl-6">
+                  <div class="tile-progress">
+                    <div class="tile-header">
+                      <span class="badge badge-secondary bg-default mt-2 ml-2 p-1">Today Sales</span>
+                      <canvas id="line-chart-1" height="100"></canvas>
+                    </div>
+                    <div class="tile-progressbar">
+                      <span data-fill="65.5%" style="width: 65.5%;"></span>
+                    </div>
+                    <div class="tile-footer">
+                      <h4>
+                        <i class="fas fa fa-caret-up text-success"></i><span class="count text-success">65.5</span>%
+                        increase
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="tile-progress">
+                    <div class="tile-header">
+                      <span class="badge badge-secondary bg-default mt-2 ml-2 p-1">Monthly Rate</span>
+                      <canvas id="line-chart-2" height="100"></canvas>
+                    </div>
+                    <div class="tile-progressbar">
+                      <span data-fill="23.2%" style="width: 23.2%;"></span>
+                    </div>
+                    <div class="tile-footer">
+                      <h4>
+                        <i class="fas fa fa-caret-down text-danger"></i><span class="count text-danger">3.2</span>%
+                        increase
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 page-todo">
+      <div class="card tasks border-0 h-100">
+        <div class="card-header bg-white">
+          <h4>Shipments</h4>
+        </div>
+        <div class="task-list">
+          <div class="priority high"><span>high priority</span></div>
+          <div class="task high">
+            <div class="desc">
+              <div class="title"><i class="pe-7s-plane"></i> Free State</div>
+              <div><i class="pe-7s-box1"></i> 20 Shipments, due today.</div>
+            </div>
+            <div class="time">
+              <div class="date">Feb 1, 2020</div>
+              <div> 1 day</div>
+            </div>
+          </div>
+          <div class="task high last">
+            <div class="desc">
+              <div class="title"><i class="pe-7s-plane"></i> North West</div>
+              <div><i class="pe-7s-box1"></i> 3 Shipments, due today...</div>
+            </div>
+            <div class="time">
+              <div class="date">Jun 1, 2020</div>
+              <div>1 day</div>
+            </div>
+          </div>
+          <div class="priority medium"><span>medium priority</span></div>
+          <div class="task medium last">
+            <div class="desc">
+              <div class="title"><i class="pe-7s-car"></i> Western Cape</div>
+              <div><i class="pe-7s-box1"></i> 14 Shipments, due tomorrow..</div>
+            </div>
+            <div class="time">
+              <div class="date">Feb 2, 2020</div>
+              <div> 2 day</div>
+            </div>
+          </div>
+          <div class="priority low"><span>low priority</span></div>
+          <div class="task low">
+            <div class="desc">
+              <div class="title"><i class="pe-7s-car"></i> Eastern Cape</div>
+              <div><i class="pe-7s-box1"></i> 14 Shipments, due next week..</div>
+            </div>
+            <div class="time">
+              <div class="date">Feb 12, 2020</div>
+              <div> 1 week</div>
+            </div>
+          </div>
+          <div class="task low">
+            <div class="desc">
+              <div class="title"><i class="pe-7s-car"></i> North West</div>
+              <div><i class="pe-7s-box1"></i> 23 Shipments, due next week..</div>
+            </div>
+            <div class="time">
+              <div class="date">Feb 2, 2020</div>
+              <div> 1 week</div>
+            </div>
+          </div>
+          <div class="task low">
+            <div class="desc">
+              <div class="title"><i class="pe-7s-plane"></i> Western Cape</div>
+              <div><i class="pe-7s-box1"></i> 14 Shipments, due next week..</div>
+            </div>
+            <div class="time">
+              <div class="date">Feb 18, 2020</div>
+              <div> 2 week</div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="card shadow-sm rounded h-100">
+        <div class="card-header bg-white">
+          <h4>Monthly Users</h4>
+        </div>
+        <div class="card-body p-2">
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="tile-progress px-4">
+                <div class="tile-header">
+                  <canvas id="line-chart-4"></canvas>
+                </div>
+                <div class="tile-progressbar">
+                  <span data-fill="65.5%" style="width: 65.5%;"></span>
+                </div>
+              </div>
+              <div class="widget">
+                <a data-toggle="tooltip" href="#" data-original-title="Lana Saurez"><img class="avatar-img"
+                    src="../../assets/images/profile/5.jpg"></a>
+                <a data-toggle="tooltip" href="#" data-original-title="Rosina Lamont">
+                  <div class="avatar-char">R</div>
+                </a>
+                <a data-toggle="tooltip" href="#" data-original-title="Wava Vermeulen">
+                  <div class="avatar-char">W</div>
+                </a>
+                <a data-toggle="tooltip" href="#" data-original-title="Veronica Smith"><img class="avatar-img"
+                    src="../../assets/images/profile/9.jpg"></a>
+                <a data-toggle="tooltip" href="#" data-original-title="Asta B"><img class="avatar-img"
+                    src="../../assets/images/profile/3.jpg"></a>
+                <a data-toggle="tooltip" href="#" data-original-title="Deanne Jeffreys">
+                  <div class="avatar-char">D</div>
+                </a>
+                <a data-toggle="tooltip" href="#" data-original-title="Shery Heredia">
+                  <div class="avatar-char">S</div>
+                </a>
+                <a data-toggle="tooltip" href="#" data-original-title="Gaylord Coolbaugh">
+                  <div class="avatar-char">G</div>
+                </a>
+                <a data-toggle="tooltip" href="#" data-original-title="Lyda Wortman">
+                  <div class="avatar-char">L</div>
+                </a>
+                <a data-toggle="tooltip" href="#" data-original-title="Andrew Galaric"><img class="avatar-img"
+                    src="../../assets/images/profile/7.jpg"></a>
+                <a data-toggle="tooltip" href="#" data-original-title="Omarion Parker"><img class="avatar-img"
+                    src="../../assets/images/profile/4.jpg"></a>
+                <a data-toggle="tooltip" href="#" data-original-title="Matilde Weibel">
+                  <div class="avatar-char">M</div>
+                </a>
+                <a data-toggle="tooltip" href="#" data-original-title="Clement Mayor">
+                  <div class="avatar-char">C</div>
+                </a>
+                <a data-toggle="tooltip" href="#" data-original-title="Phil Wyatt">
+                  <div class="avatar-char">P</div>
+                </a>
+                <a data-toggle="tooltip" href="#" data-original-title="Altagracia Manke">
+                  <div class="avatar-char">A</div>
+                </a>
+                <a data-toggle="tooltip" href="#" data-original-title="Siu Derosier">
+                  <div class="avatar-char">S</div>
+                </a>
+                <a data-toggle="tooltip" href="#" data-original-title="Crystal Markel">
+                  <div class="avatar-char">C</div>
+                </a>
+                <a data-toggle="tooltip" href="#" data-original-title="Noman Nottage">
+                  <div class="avatar-char">N</div>
+                </a>
+                <a data-toggle="tooltip" href="#" data-original-title="Shaneka Hoyle">
+                  <div class="avatar-char">S</div>
+                </a>
+                <a data-toggle="tooltip" href="#" data-original-title="Milagro Evans">
+                  <div class="avatar-char">M</div>
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="table-responsive boxscroll" style="overflow: hidden; outline: none;" tabindex="5000">
+                <table class="table mb-0">
+                  <tbody>
+                    <tr>
+                      <td class="border-top-0">
+                        <div class="media"><img src="../../assets/images/profile/5.jpg"
+                            class="thumb-sm rounded-circle">
+                          <div class="media-body ml-2">
+                            <p class="mb-0">Lana Saurez <span class="badge badge-soft-danger">USA</span></p><span
+                              class="font-12 text-muted">CEO of facebook</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="border-bottom border-top-0 text-right">
+                        <div class="btn-group btn-group-toggle mt-2 mt-lg-0" data-toggle="buttons">
+                          <label class="btn btn-primary btn-sm waves-effect active">
+                            <input type="radio" name="options" id="genderoption1" checked> <i
+                              class="feather icon-message-circle"></i> Chat
+                          </label>
+                          <label class="btn btn-primary btn-sm waves-effect">
+                            <input type="radio" name="options" id="genderoption2"> <i
+                              class="feather icon-phone-call"></i> Call
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="media"><img src="../../assets/images/profile/9.jpg"
+                            class="thumb-sm rounded-circle">
+                          <div class="media-body ml-2">
+                            <p class="mb-0">Veronica Smith <span class="badge badge-soft-info">UK</span></p><span
+                              class="font-12 text-muted">CEO of WhatsApp</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="border-bottom border-top-0 text-right">
+                        <div class="btn-group btn-group-toggle mt-2 mt-lg-0" data-toggle="buttons">
+                          <label class="btn btn-primary btn-sm waves-effect active">
+                            <input type="radio" name="options" id="genderoption1" checked> <i
+                              class="feather icon-message-circle"></i> Chat
+                          </label>
+                          <label class="btn btn-primary btn-sm waves-effect">
+                            <input type="radio" name="options" id="genderoption2"> <i
+                              class="feather icon-phone-call"></i> Call
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="media"><img src="../../assets/images/profile/3.jpg"
+                            class="thumb-sm rounded-circle">
+                          <div class="media-body ml-2">
+                            <p class="mb-0">Asta B <span class="badge badge-soft-danger">USA</span></p><span
+                              class="font-12 text-muted">founder of Google</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="border-bottom border-top-0 text-right">
+                        <div class="btn-group btn-group-toggle mt-2 mt-lg-0" data-toggle="buttons">
+                          <label class="btn btn-primary btn-sm waves-effect active">
+                            <input type="radio" name="options" id="genderoption1" checked> <i
+                              class="feather icon-message-circle"></i> Chat
+                          </label>
+                          <label class="btn btn-primary btn-sm waves-effect">
+                            <input type="radio" name="options" id="genderoption2"> <i
+                              class="feather icon-phone-call"></i> Call
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="media"><img src="../../assets/images/profile/7.jpg"
+                            class="thumb-sm rounded-circle">
+                          <div class="media-body ml-2">
+                            <p class="mb-0">Andrew Galaric <span class="badge badge-soft-purple">Canada</span></p><span
+                              class="font-12 text-muted">CEO of Paypal</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="border-bottom border-top-0 text-right">
+                        <div class="btn-group btn-group-toggle mt-2 mt-lg-0" data-toggle="buttons">
+                          <label class="btn btn-primary btn-sm waves-effect active">
+                            <input type="radio" name="options" id="genderoption1" checked> <i
+                              class="feather icon-message-circle"></i> Chat
+                          </label>
+                          <label class="btn btn-primary btn-sm waves-effect">
+                            <input type="radio" name="options" id="genderoption2"> <i
+                              class="feather icon-phone-call"></i> Call
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="media"><img src="../../assets/images/profile/4.jpg"
+                            class="thumb-sm rounded-circle">
+                          <div class="media-body ml-2">
+                            <p class="mb-0">Omarion Parker <span class="badge badge-soft-info">India</span></p><span
+                              class="font-12 text-muted">CEO of Global Logistics</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="border-bottom border-top-0 text-right">
+                        <div class="btn-group btn-group-toggle mt-2 mt-lg-0" data-toggle="buttons">
+                          <label class="btn btn-primary btn-sm waves-effect active">
+                            <input type="radio" name="options" id="genderoption1" checked> <i
+                              class="feather icon-message-circle"></i> Chat
+                          </label>
+                          <label class="btn btn-primary btn-sm waves-effect">
+                            <input type="radio" name="options" id="genderoption2"> <i
+                              class="feather icon-phone-call"></i> Call
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="media"><img src="../../assets/images/demo/user.jpeg"
+                            class="thumb-sm rounded-circle">
+                          <div class="media-body ml-2">
+                            <p class="mb-0">Amstrong Nelh <span class="badge badge-soft-pink">Africa</span></p><span
+                              class="font-12 text-muted">founder of Hubstack</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="border-bottom border-top-0 text-right">
+                        <div class="btn-group btn-group-toggle mt-2 mt-lg-0" data-toggle="buttons">
+                          <label class="btn btn-primary btn-sm waves-effect active">
+                            <input type="radio" name="options" id="genderoption1" checked> <i
+                              class="feather icon-message-circle"></i> Chat
+                          </label>
+                          <label class="btn btn-primary btn-sm waves-effect">
+                            <input type="radio" name="options" id="genderoption2"> <i
+                              class="feather icon-phone-call"></i> Call
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="media"><img src="../../assets/images/profile/12.jpg"
+                            class="thumb-sm rounded-circle">
+                          <div class="media-body ml-2">
+                            <p class="mb-0">Melanie Bark <span class="badge badge-soft-success">USA</span></p><span
+                              class="font-12 text-muted">Manager of WestBank</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="border-top-0 text-right">
+                        <div class="btn-group btn-group-toggle mt-2 mt-lg-0" data-toggle="buttons">
+                          <label class="btn btn-primary btn-sm waves-effect active">
+                            <input type="radio" name="options" id="genderoption1" checked> <i
+                              class="feather icon-message-circle"></i> Chat
+                          </label>
+                          <label class="btn btn-primary btn-sm waves-effect">
+                            <input type="radio" name="options" id="genderoption2"> <i
+                              class="feather icon-phone-call"></i> Call
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-12">
+      <div class="card">
+        <div class="card-header bg-white">
+          <i class="feather icon-download text-dark float-right"></i>
+          <h4>Payments</h4>
+        </div>
+        <div class="card-body">
+          <table class="table table-hover mb-0">
+            <thead>
+              <tr class="align-self-center">
+                <th>Project Name</th>
+                <th>Client Name</th>
+                <th>Payment Type</th>
+                <th>Paid Date</th>
+                <th>Amount</th>
+                <th>Transaction</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Product Development</td>
+                <td><img src="../../assets/images/profile/12.jpg"
+                    class="thumb-sm rounded-circle mr-2"> Melanie Bark</td>
+                <td><span class="badge badge-boxed badge-soft-primary"><i class="fab fa-cc-paypal"></i></span> Paypal
+                </td>
+                <td>5/8/2020</td>
+                <td>R15,000</td>
+                <td><span class="badge badge-boxed badge-soft-warning">panding</span></td>
+              </tr>
+              <tr>
+                <td>New Office Building</td>
+                <td><img src="../../assets/images/profile/4.jpg" class="thumb-sm rounded-circle mr-2">
+                  Omarion Parker</td>
+                <td><span class="badge badge-boxed badge-soft-primary"><i class="fab fa-cc-paypal"></i></span> Paypal
+                </td>
+                <td>15/3/2020</td>
+                <td>R35,000</td>
+                <td><span class="badge badge-boxed badge-soft-success">Success</span></td>
+              </tr>
+              <tr>
+                <td>Market Research</td>
+                <td><img src="../../assets/images/profile/9.jpg" class="thumb-sm rounded-circle mr-2">
+                  Veronica Smith</td>
+                <td><span class="badge badge-boxed badge-soft-warning"><i class="fab fa-cc-visa"></i></span> Visa</td>
+                <td>30/3/2020</td>
+                <td>R45,000</td>
+                <td><span class="badge badge-boxed badge-soft-warning">Panding</span></td>
+              </tr>
+              <tr>
+                <td>Website &amp; Blog</td>
+                <td><img src="../../assets/images/profile/3.jpg" class="thumb-sm rounded-circle mr-2">
+                  Asta B</td>
+                <td><span class="badge badge-boxed badge-soft-primary"><i class="fab fa-cc-paypal"></i></span> Paypal
+                </td>
+                <td>2/4/2020</td>
+                <td>R70,000</td>
+                <td><span class="badge badge-boxed badge-soft-warning">Success</span></td>
+              </tr>
+              <tr>
+                <td>Product Devlopment</td>
+                <td><img src="../../assets/images/profile/5.jpg" class="thumb-sm rounded-circle mr-2">
+                  Lana Saurez</td>
+                <td><span class="badge badge-boxed badge-soft-danger"><i class="fab fa-cc-mastercard"></i></span>
+                  Mastercard</td>
+                <td>5/3/2020</td>
+                <td>R15,000</td>
+                <td><span class="badge badge-boxed badge-soft-success">panding</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pt-3 border-top text-right"><a href="#" class="text-dark">View all <i
+                class="feather icon-arrow-right"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-6">
+      <div class="card table-inverse h-100 mb-4">
+        <div class="card-header bg-white">
+          <i class="feather icon-download text-dark float-right"></i>
+          <h4>Sales by Period</h4>
+        </div>
+        <div class="card-body table-slick-inner">
+          <ul class="nav nav-pills card-header-pills pl-2 pt-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active shadow wave-effect mr-2" id="pills-weekly-tab" data-toggle="pill"
+                href="#pills-weekly" role="tab" aria-controls="pills-weekly" aria-expanded="true">Weekly</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link shadow wave-effect" id="pills-monthly-tab" data-toggle="pill" href="#pills-monthly"
+                role="tab" aria-controls="pills-monthly" aria-expanded="true">Monthly</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-weekly" role="tabpanel" aria-labelledby="pills-weekly-tab">
+              <div id="bar-chart"></div>
+            </div>
+            <div class="tab-pane fade" id="pills-monthly" role="tabpanel" aria-labelledby="pills-monthly-tab">
+              <canvas id="line-chart-3" height="300"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6">
+      <div class="card table-inverse h-100 mb-4">
+        <div class="card-header bg-white">
+          <i class="feather icon-download text-dark float-right"></i>
+          <h4>Sales by State</h4>
+        </div>
+        <div class="card-body icon-mail">
+          <div id="hero-graph"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-12 mt-4">
+      <div class="card table-inverse h-100 mb-4">
+        <div class="card-header bg-white">
+          <i class="feather icon-download text-dark float-right"></i>
+          <h4>Transaction History</h4>
+        </div>
+        <div class="card-body table-slick-inner">
+          <table class="table-slick table-inverse">
+            <thead>
+              <tr>
+                <th><i class="pe-7s-users"></i> Client</th>
+                <th><i class="pe-7s-box2"></i> Items</th>
+                <th><i class="pe-7s-cash"></i> Payment</th>
+                <th><i class="pe-7s-car"></i> Delivery</th>
+                <th><i class="pe-7s-wristwatch"></i> Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="member">
+                  <img src="../../assets/images/profile/9.jpg" />
+                  <div class="member-info">
+                    <p>Veronica Smith</p>
+                    <p>CEO of WhatsApp</p>
+                  </div>
+                </td>
+                <td>
+                  <p>400 items</p>
+                  <p>Plastic bag</p>
+                </td>
+                <td>
+                  <p>Payment from #10322</p>
+                  <p>R250.00</p>
+                  <p class="text-warning">Paid</p>
+                </td>
+                <td>
+                  <p>done on Mar 28 2020</p>
+                  <p class="text-warning">done</p>
+                </td>
+                <td class="status">
+                  <span class="status-text status-warning text-warning">In progress</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="member">
+                  <img src="../../assets/images/profile/3.jpg" />
+                  <div class="member-info">
+                    <p>Asta B</p>
+                    <p>Founder of Google</p>
+                  </div>
+                </td>
+                <td>
+                  <p>300 items</p>
+                  <p>Plastic bag</p>
+                </td>
+                <td>
+                  <p>Payment from #10322</p>
+                  <p>R250.00</p>
+                  <p class="text-success">Paid</p>
+                </td>
+                <td>
+                  <p>done on Mar 28 2020</p>
+                  <p class="text-success">done</p>
+                </td>
+                <td class="status">
+                  <span class="status-text status-green text-success">Completed</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="member">
+                  <img src="../../assets/images/profile/7.jpg" />
+                  <div class="member-info">
+                    <p>Andrew Galaric</p>
+                    <p>CEO of Paypal</p>
+                  </div>
+                </td>
+                <td>
+                  <p>300 items</p>
+                  <p>Plastic bag</p>
+                </td>
+                <td>
+                  <p>Payment from #10322</p>
+                  <p>R250.00</p>
+                  <p class="text-success">Paid</p>
+                </td>
+                <td>
+                  <p>done on Mar 28 2020</p>
+                  <p class="text-success">done</p>
+                </td>
+                <td class="status">
+                  <span class="status-text status-green text-success">Completed</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="member">
+                  <img src="../../assets/images/profile/4.jpg" />
+                  <div class="member-info">
+                    <p>Omarion Parker</p>
+                    <p>CEO of Global Logistics</p>
+                  </div>
+                </td>
+                <td>
+                  <p>30 items</p>
+                  <p>Plastic bag</p>
+                </td>
+                <td>
+                  <p>Payment from #10322</p>
+                  <p>R250.00</p>
+                  <p class="text-success">Paid</p>
+                </td>
+                <td>
+                  <p>done on Mar 28 2020</p>
+                  <p class="text-success">done</p>
+                </td>
+                <td class="status">
+                  <span class="status-text status-green text-success">Completed</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                <footer class="py-4 border-top">
+    <div class="container-fluid">
+        <div class="d-flex align-items-center justify-content-between small">
+            <div class="text-muted">Copyright &copy; Your Website 2020</div>
+            <div>
+                <a href="#">Privacy Policy</a>
+                &middot;
+                <a href="#">Terms &amp; Conditions</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+            </main>
+        </div>
+    </div>
+    <!-- Le Javascript -->
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../assets/js/vendor/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/library.min.js"></script>
+    
+    <script src="../../assets/js/vendor/jquery-jvectormap.min.js"></script>
+    <script src="../../assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="../../assets/js/vendor/jquery-jvectormap-za-mill.js"></script>
+    <script src="../../assets/js/vendor/sparkline.min.js"></script>
+    <script src="../../assets/js/vendor/apexcharts.min.js"></script>
+    <script src="../../assets/js/vendor/chart.min.js"></script>
+    <script src="../../assets/js/vendor/raphael-min.js"></script>
+    <script src="../../assets/js/vendor/morris.min.js"></script>
+    <script src="../../assets/js/config/dashboard-1.js"></script>
+    <script src="../../assets/js/core/main.js"></script>
+    <script>
+        // Dark Sidebar Toggle
+        $('.js-darkSidebar').click(function(e) {
+            e.preventDefault();
+            let isDarkCss = $("link[href='../../assets/css/style-dark.css']");
+            if (isDarkCss.length){
+                isDarkCss.remove();
+            }else{
+                $('head').append('<link type="text/css" rel="stylesheet" media="all" href="../../assets/css/style-dark.css">');
+            }
+        });
+    </script>
+</body>
+</html>

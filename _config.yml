@@ -1,0 +1,24 @@
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve [--baseurl '']'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: 'Hubstack-AdminPro'
+email: 'nelhamstrong9@gmail.com'
+description: 'Bootstrap4 Admin template to speedup your web development workflow'
+tel: '+27 61009 5710'
+company: 'hubstack'
+
+# ** Make sure you change these before deploying site **
+baseurl: '../..' # the subpath of your site, e.g. /blog
+url: 'https://hubstack.netlify.com' # the base hostname & protocol for your site, e.g. http://example.com or http://[yourusername].github.io
+
+# Build settings
+exclude: ['node_modules', 'gulpfile.js', 'package.json', 'package-lock.json']
+plugins:
+  - jekyll-minifier
+jekyll-minifier:
+  exclude: ['assets/css/*.css', '*.min.*']

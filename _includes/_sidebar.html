@@ -1,0 +1,405 @@
+<!-- Main Menu -->
+<div class="sidebar">
+    <div class="logo">
+        <a href="{{ site.baseurl }}/index.html">
+            <span class="logo-emblem"><img src="{{ site.baseurl }}/assets/images/logo-sm.png" /></span>
+            <span class="logo-full">Hubstack</span>
+        </a>
+    </div>
+    <ul id="sidebarCookie">
+        <li class="title">
+            <i class="feather icon-more-horizontal"></i>
+            <span class="menu-title">Main</span>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed wave-effect" data-parent="#sidebarCookie" data-toggle="collapse" href="#navDashboard" aria-expanded="false" aria-controls="page-dashboard">
+                <i class="feather icon-activity"></i>
+                <span class="menu-title">Dashboard</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navDashboard">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/index.html">
+                            <i class="feather icon-activity"></i>
+                            <span class="menu-title">Dashboard 1</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/dashboards/dashboard-2.html">
+                            <i class="feather icon-activity"></i>
+                            <span class="menu-title">Dashboard 2</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/dashboards/dashboard-3.html">
+                            <i class="feather icon-activity"></i>
+                            <span class="menu-title">Dashboard 3</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/dashboards/dashboard-4.html">
+                            <i class="feather icon-activity"></i>
+                            <span class="menu-title">Dashboard 4</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed wave-effect" data-parent="#sidebarCookie" data-toggle="collapse" href="#navapps" aria-expanded="false" aria-controls="page-apps">
+                <i class="feather icon-grid"></i>
+                <span class="menu-title">Apps</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navapps">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a href="{{ site.baseurl }}/html/app/booking.html" class="nav-link wave-effect nav-single">
+                            <i class="feather icon-calendar"></i>
+                            <span class="menu-title">Booking</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ site.baseurl }}/html/app/kanban.html" class="nav-link wave-effect nav-single">
+                            <i class="feather icon-check-square"></i>
+                            <span class="menu-title">Kanban Board</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/app/myFile.html">
+                            <i class="feather icon-file-text"></i>
+                            <span class="menu-title">My Files</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/app/task.html">
+                            <i class="feather icon-file-text"></i>
+                            <span class="menu-title">Tasks</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ site.baseurl }}/html/app/calendar.html" class="nav-link wave-effect nav-single">
+                            <i class="feather icon-calendar"></i>
+                            <span class="menu-title">Full Calendar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect nav-single" href="{{ site.baseurl }}/html/charts/vector-map.html">
+                <i class="feather icon-globe"></i>
+                <span class="menu-title">Vector Map</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect nav-single" href="{{ site.baseurl }}/html/charts/chart-js.html">
+                <i class="feather icon-pie-chart"></i>
+                <span class="menu-title">Charts Js</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect nav-single" href="{{ site.baseurl }}/html/charts/morris-chart.html">
+                <i class="feather icon-bar-chart-2"></i>
+                <span class="menu-title">Morris Charts</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect nav-single" href="{{ site.baseurl }}/html/charts/apexchart.html">
+                <i class="feather icon-bar-chart-line"></i>
+                <span class="menu-title">ApexCharts</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect nav-single" href="{{ site.baseurl }}/html/charts/sparkline.html">
+                <i class="feather icon-bar-chart-line-"></i>
+                <span class="menu-title">Sparkline</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed" data-parent="#sidebarCookie" data-toggle="collapse" href="#navProfilebox" aria-expanded="false" aria-controls="page-profilebox">
+                <i class="feather icon-users"></i>
+                <span class="menu-title">Account</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navProfilebox">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/account/profile.html">
+                            <i class="feather icon-user"></i>
+                            <span class="menu-title">Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/account/billing.html">
+                            <i class="feather icon-dollar-sign"></i>
+                            <span class="menu-title">Billing</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed" data-parent="#sidebarCookie" data-toggle="collapse" href="#navAuthenticate" aria-expanded="false" aria-controls="page-Authenticate">
+                <i class="feather icon-shield"></i>
+                <span class="menu-title">Authentications</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navAuthenticate">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/authentication/login.html">
+                            <i class="feather icon-log-in"></i>
+                            <span class="menu-title">Login</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/authentication/register.html">
+                            <i class="feather icon-lock"></i>
+                            <span class="menu-title">Register</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/authentication/recover-password.html">
+                            <i class="feather icon-unlock"></i>
+                            <span class="menu-title">Recover password</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/authentication/lock-screen.html">
+                            <i class="feather icon-log-out"></i>
+                            <span class="menu-title">Lock Screen</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed" data-parent="#sidebarCookie" data-toggle="collapse" href="#navMailbox" aria-expanded="false" aria-controls="page-mailbox">
+                <i class="feather icon-mail"></i>
+                <span class="menu-title">Mailbox</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navMailbox">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/app/inbox.html">
+                            <i class="feather icon-inbox"></i>
+                            <span class="menu-title">Inbox</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/app/inbox-email.html">
+                            <i class="feather icon-mail"></i>
+                            <span class="menu-title">Email</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/app/inbox-compose.html">
+                            <i class="feather icon-send"></i>
+                            <span class="menu-title">Compose</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed" data-parent="#sidebarCookie" data-toggle="collapse" href="#navPageLayouts" aria-expanded="false" aria-controls="page-layouts">
+                <i class="feather icon-sidebar"></i>
+                <span class="menu-title">Layouts</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navPageLayouts">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/layouts/minimal.html">
+                            <i class="feather icon-folder-minus"></i>
+                            <span class="menu-title">Minimal Layout</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/layouts/boxed.html">
+                            <i class="feather icon-bold"></i>
+                            <span class="menu-title">Boxed Layout</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/layouts/horizontal.html">
+                            <i class="feather icon-pause"></i>
+                            <span class="menu-title">Horizontal Layout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="title">
+            <i class="feather icon-more-horizontal"></i>
+            <span class="menu-title">Components</span>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed" data-parent="#sidebarCookie" data-toggle="collapse" href="#navElements" aria-expanded="false" aria-controls="page-elements">
+                <i class="feather icon-layout"></i>
+                <span class="menu-title">Elements</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navElements">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/elements/alerts.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Alerts</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/elements/badge.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Badge</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/elements/Button.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Buttons</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/elements/card.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Card</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/elements/dropdowns.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Dropdowns</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/elements/form.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Form</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/elements/grid.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Grid System</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/elements/modal.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Modal</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/elements/navs.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Navs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/elements/popover-tooltips.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Popover & Tooltips</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/elements/progress.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Progress Bar</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/elements/spinners.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Spinners</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/elements/tables.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Tables</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed" data-parent="#sidebarCookie" data-toggle="collapse" href="#navExtra" aria-expanded="false" aria-controls="page-Extra">
+                <i class="feather icon-star"></i>
+                <span class="menu-title">Extra Pages</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navExtra">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/extra/timeline.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Timeline</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/extra/notification.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Notifications</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/extra/message.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Message</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/extra/pricing.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Pricing</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/extra/coming-soon.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Coming soon</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/extra/maintenance.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Maintenance</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/extra/404.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">404 Error</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/extra/500.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">500 Error</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect" href="{{ site.baseurl }}/html/extra/starter.html">
+                            <i class="feather icon-layers"></i>
+                            <span class="menu-title">Starter</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="title">
+            <i class="feather icon-more-horizontal"></i>
+            <span class="menu-title">Misc</span>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wave-effect nav-single" href="{{ site.baseurl }}/html/extra/dependency.html">
+                <i class="feather icon-zap"></i>
+                <span class="menu-title">Dependency</span>
+            </a>
+        </li>
+    </ul>
+</div>

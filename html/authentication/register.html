@@ -1,0 +1,50 @@
+---
+layout: authenticate
+title:  Register
+---
+<div class="authentication my-5">
+  <div class="authentication-container">
+      <div class="authentication-form">
+          <a href="{{ site.baseurl }}/index.html" class="logo">
+              <img src="{{ site.baseurl }}/assets/images/logo.png" />
+          </a>
+          <form action="">
+              <div class="text-center pt-2 pb-5">
+                  <h5>Welcome!</h5>
+                  <h4>Create an Account</h4>
+              </div>
+              <div class="form-group">
+                  <input type="text" name="username" placeholder="Username" required/>
+                  <label><i class="feather icon-user"></i></label>
+              </div>
+              <div class="form-group">
+                  <input type="text" name="email" placeholder="Email address" required/>
+                  <label><i class="feather icon-mail"></i></label>
+              </div>
+              <div class="form-group">
+                  <input type="password" name="password" placeholder="Password" required/>
+                  <label><i class="feather icon-lock"></i></label>
+              </div>
+              <div class="form-group">
+                  <input type="password" name="password" placeholder="Confirm Password" required/>
+                  <label><i class="feather icon-lock"></i></label>
+              </div>
+              <div class="custom-controls-stacked">
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">I accept to all the terms and conditions</span>
+                  </label>
+              </div>
+              <div class="authentication-button">
+                  <a href="#" class="btn btn-dark btn-block waves-effect" type="submit">Register</a>
+                  <a href="{{ site.baseurl }}/html/authentication/login.html" class="forgot-password">Have an account? Login</a>
+                  <div class="authentication-box mt-2">
+                      <a href="#" class="btn btn-block btn-facebook-connect shadow-sm waves-effect p-2"> <span>Register with Facebook</span></a>
+                      <a href="#" class="btn btn-block btn-google-connect shadow-sm waves-effect p-2"> <span>Register with Google</span></a>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>

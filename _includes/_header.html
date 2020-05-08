@@ -1,0 +1,16 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title == "Home" %}{{ site.title }} &middot; {{ site.tagline }}{% else %} {{ page.title }} &middot; {{ site.title }} {% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    {% if page.customCSS %}{% for customCSSFile in page.customCSS %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ customCSSFile }}">
+    {% endfor %}{% endif %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <!-- Dark Mode -->
+    <!-- <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-dark.css"> -->
+    <!-- jquery -->
+    <script src="{{ site.baseurl }}/assets/js/vendor/jquery.min.js"></script>
+</head>

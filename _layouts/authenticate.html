@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"> 
+{% include _header.html %}
+<body class="bg-page-fixed">
+    {{ content }}
+    <!-- Le Javascript -->
+   <script src="{{ site.baseurl }}/assets/js/vendor/popper.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/vendor/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/vendor/library.min.js"></script>
+    {% if page.customJs %}{% for customJsFile in page.customJs %}
+    <script src="{{ site.baseurl }}/assets/js/{{ customJsFile }}"></script>{% endfor %}{% endif %}
+    <script src="{{ site.baseurl }}/assets/js/core/main.js"></script>
+</body>
+</html>
