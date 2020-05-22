@@ -1512,3 +1512,23 @@ a.list-group-item,
     font-size: 38px !important;
 }
 
+p,figure {
+    margin: 0;
+    padding: 0;
+}
+   
+.table {
+    td, th {
+      white-space: nowrap;
+      padding-right: 13px;
+    }
+    .member {
+      display: flex;
+      img{ 
+        width: 32px;
+        height:32px;
+        border-radius: 100%;
+        margin-right: 10px;
+      }
+    }
+  }

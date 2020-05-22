@@ -1,5 +1,4 @@
-# About Hubstack-AdminPro 
-https://hubstack.netlify.app/
+# About Hubstack-AdminPro
 
 Hubstack AdminPro is a WebApp template for admin dashboards and control panels. It is fully responsive HTML template, which is based on the CSS framework Bootstrap 4. It utilizes all of the Bootstrap components in its design and re-styles many commonly used plugins to create a consistent design that can be used as a user interface for backend applications.
 
@@ -27,29 +26,31 @@ Jekyll is a static site generator. You give it text written in your favorite mar
 After purchasing our template extract the zip file and you will see this structure.
 
 ```javascript
-├── Hubstack-AdminPro 
-    ├── includes/
-    ├── layouts/
-    ├── assets/
-    │   └── css/
-    │   └── images/
-    │   └── js/
-    │   ├── scss/
-    │   │   └── components/
-    │   │   └── config/
-    │   │   └── customs/
-    │   │   └── layouts/
-    │   │   └── style.scss
-    │   │   └── style-dark.scss
-    ├── demo/
-    ├── html/
-    │   └── html pages
-    ├── .gitignore
-    ├── config.dev.yml
-    ├── config.yml
-    ├── gulpfile.js
-    ├── index.html
-    └── package.json
+├── Hubstack-AdminPro   
+    ├── demo 
+    ├── docs
+    ├── src  
+    |   ├── includes/
+    |   ├── layouts/
+    │   ├── assets/
+    │   │   └── css/
+    │   │   └── images/
+    │   │   └── js/
+    │   │   ├── scss/
+    │   │   │   └── components/
+    │   │   │   └── config/
+    │   │   │   └── customs/
+    │   │   │   └── layouts/
+    │   │   │   └── style.scss
+    │   │   │   └── style-dark.scss
+    │   ├── html/
+    │   │   └── html pages
+    │   ├── config.dev.yml
+    │   ├── config.yml
+    │   ├── gulpfile.js
+    │   ├── index.html
+    │   ├── package.json
+    |   └── .gitignore
 ```
 
 ## Get Started
