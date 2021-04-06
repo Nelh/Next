@@ -1,21 +1,10 @@
-/** Config **/
-@import "config/library";
-@import "config/variables";
-@import "config/mixins";
-@import "config/base";
-/** Layouts **/
-@import "layouts/layout";
-@import "layouts/topbar";
-@import "layouts/sidebar";
-/** Customs **/
-@import "customs/custom";
-/** Components **/
-@import "components/icons";
-@import "components/breadcrumb";
-@import "components/forms";
-@import "components/calendar";
-@import "components/print";
-@import "components/invoice";
-@import "components/widget";
-@import "components/timeline";
-@import "components/loader";
+// @import "bootswatch/dist/materia/variables";
+// @import "bootstrap/scss/bootstrap";
+// @import "bootswatch/dist/materia/bootswatch";
+
+@import '_variables';
+@import '_mixins';
+@import 'customs/index';
+@import '_library';
+
+@import "bootstrap/scss/bootstrap";

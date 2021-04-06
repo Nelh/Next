@@ -7,7 +7,7 @@ const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
 
 const env = process.env.NODE_ENV || 'prod';
-const processors = [prefix({ browsers: ['> 5%', 'last 3 versions'] }),cssnano];
+const processors = [prefix(),cssnano];
 const jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 const messages = { 
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build',
@@ -22,6 +22,7 @@ var paths = {
   scripts: {
     src: 'assets/js/*.js',
     dest: '_site/assets/js',
+    destsecond: 'assets/js',
   },
 };
 
@@ -39,22 +40,12 @@ function jekyllBuild() {
 
 function style() {
   return gulp
-    .src('assets/scss/style.scss')
-    .pipe(sass({includePaths: ['scss'],onError: browserSync.notify}))
+    .src(paths.styles.src)
+    .pipe(sass({includePaths: ['scss', 'node_modules'],onError: browserSync.notify}))
     .pipe(postcss(processors))
     .pipe(gulp.dest(paths.styles.dest))
-    .pipe(browserSync.reload({ stream: true }))
-    .pipe(gulp.dest(paths.styles.destsecond));
-}
-
-function theme() {
-  return gulp
-    .src('assets/scss/style-dark.scss')
-    .pipe(sass({includePaths: ['scss'],onError: browserSync.notify}))
-    .pipe(postcss(processors))
-    .pipe(gulp.dest(paths.styles.dest))
-    .pipe(browserSync.reload({ stream: true }))
-    .pipe(gulp.dest(paths.styles.destsecond));
+    .pipe(gulp.dest(paths.styles.destsecond))
+    .pipe(browserSync.reload({ stream: true }));
 }
 
 // Reload files
@@ -74,7 +65,6 @@ function browserSyncServe() {
 // Gulp watch files
 function watch() {
   gulp.watch(paths.styles.src, style);
-  gulp.watch(paths.styles.src, theme);
   gulp.watch(['*.html','_layouts/*','_includes/*','html/**/*','assets/*'],gulp.series(jekyllBuild, reload));
 }
 /**

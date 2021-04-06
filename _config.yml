@@ -6,15 +6,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 'Hubstack-AdminPro'
+title: 'Next'
 email: 'nelhamstrong9@gmail.com'
-description: 'Bootstrap4 Admin template to speedup your web development workflow'
-tel: '+27 61009 5710'
+description: 'bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, webcd '
+tel: ''
 company: 'hubstack'
 
 # ** Make sure you change these before deploying site **
 baseurl: '../..' # the subpath of your site, e.g. /blog
-url: 'https://hubstack.netlify.com' # the base hostname & protocol for your site, e.g. http://example.com or http://[yourusername].github.io
+url: '' # the base hostname & protocol for your site, e.g. http://example.com or http://[yourusername].github.io
 
 # Build settings
 exclude: ['node_modules', 'gulpfile.js', 'package.json', 'package-lock.json']

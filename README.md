@@ -1,6 +1,6 @@
 # About Hubstack-AdminPro
 
-Hubstack AdminPro is a WebApp template for admin dashboards and control panels. It is fully responsive HTML template, which is based on the CSS framework Bootstrap 4. It utilizes all of the Bootstrap components in its design and re-styles many commonly used plugins to create a consistent design that can be used as a user interface for backend applications.
+Hubstack AdminPro is a WebApp template for admin dashboards and control panels. It is fully responsive HTML template, which is based on the CSS framework Bootstrap 5. It utilizes all of the Bootstrap components in its design and re-styles many commonly used plugins to create a consistent design that can be used as a user interface for backend applications.
 
 ## Development Environment Tools
 
@@ -126,7 +126,7 @@ There is two Yaml configuration files: `_config.yml` and `_config.dev.yml` that 
 This is the list of what is included in this template
 
 - Well Crafted Design
--2 Modes (Light & Dark Mode)
+- 2 Modes (Light & Dark Mode)
 - 4 Dashboards
 - 60+ ready to use graph and Charts
 - 10+ vector maps for countries
@@ -134,7 +134,6 @@ This is the list of what is included in this template
 - 50+ Pages
 - Authentication Pages
 - Calendar
-- Mailbox
 - Booking layout
 - Kanban Board
 - Timeline
@@ -157,7 +156,7 @@ This is the list of what is included in this template
 ## Credit & Ressources
 
 We have used some third party plugins, you can check the list
-- [Bootstrap 4](https://getbootstrap.com/)
+- [Bootstrap 5](https://getbootstrap.com/)
 - [Jquery 3.4.1](https://jquery.com/)
 - [Popper](https://popper.js.org/)
 - [Font Awesome 5](https://fontawesome.com/changelog/latest)

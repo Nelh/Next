@@ -1,5 +1,5 @@
 {
-  "name": "hubstackAdminPro",
+  "name": "Next",
   "version": "1.0.1",
   "main": "gulpfile.js",
   "scripts": {
@@ -14,5 +14,11 @@
     "gulp-gh-pages": "^0.6.0-6",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootswatch": "^4.6.0",
+    "bundler": "^0.8.0",
+    "jekyll": "^3.0.0-beta1"
   }
 }

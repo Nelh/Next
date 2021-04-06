@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html lang="en"> 
-{% include _header.html %}
-<body class="blank-page">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% if page.title == "Home" %}{{ site.title }} &middot; {{ site.tagline }}{% else %} {{ page.title }} &middot; {{ site.title }} {% endif %}</title>
+
+    <!-- <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/vendor/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+</head>
+    
+<body class="app">
+    <div id='loader'>
+        <div class="spinner"></div>
+    </div>
+
+    <script>
+        window.addEventListener('load', function load() {
+            const loader = document.getElementById('loader');
+            setTimeout(function() {
+            loader.classList.add('fadeOut');
+            }, 300);
+        });
+    </script>
     {{ content }}
-    <!-- Le Javascript -->
-   <script src="{{ site.baseurl }}/assets/js/vendor/popper.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/vendor/bootstrap.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/vendor/library.min.js"></script>
-    {% if page.customJs %}{% for customJsFile in page.customJs %}
-    <script src="{{ site.baseurl }}/assets/js/{{ customJsFile }}"></script>{% endfor %}{% endif %}
-    <script src="{{ site.baseurl }}/assets/js/core/main.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/vendor/bootstrap.bunble.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/vendor/jquery-3.5.1.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/index.js"></script>
 </body>
 </html>

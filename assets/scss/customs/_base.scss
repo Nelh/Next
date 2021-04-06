@@ -1,0 +1,43 @@
+html, html a, body {
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  font-size: 14px;
+  color: $default-dark;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  overflow-x: hidden;
+}
+
+
+a {
+  color: $default-info;
+  text-decoration: none !important;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: darken($default-info, 10%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.text-gray {
+    &:hover,
+    &:focus,
+    &.active {
+      color: $default-dark !important;
+    }
+  }
+}
+
+:focus {
+  outline: none;
+}
