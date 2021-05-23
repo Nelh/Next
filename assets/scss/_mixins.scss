@@ -1,24 +1,3 @@
-// Placeholder
-//----------------------------------------------------------
-
-@mixin placeholder {
-    &::-webkit-input-placeholder {
-        @content;
-    }
-
-    &:-moz-placeholder {
-        @content;
-    }
-
-    &::-moz-placeholder {
-        @content;
-    }
-
-    &:-ms-input-placeholder {
-        @content;
-    }
-}
-
 // Clearfix
 //----------------------------------------------------------
 
@@ -35,18 +14,6 @@
     }
 }
 
-
-// General Media Query Mixin
-// ---------------------------------------------------------
-
-// Mixin used for custom rules that don't follow
-// any of the following premade media queries.
-
-@mixin mq($condition) {
-    @media #{$condition} {
-        @content;
-    }
-}
 
 // All Above Media Query Mixin
 // ---------------------------------------------------------

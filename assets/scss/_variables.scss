@@ -7,24 +7,18 @@ $breakpoint-md : 992px;
 $breakpoint-sm : 768px;
 $breakpoint-xs : 0;
 
-// Greyscale Colors
-// ---------------------------------------------------------
-
-$grey-900             : #313435;
-
 // Default Colors
 // ---------------------------------------------------------
 
-$default-dark         : #444444;
-$default-info         : #0f9aee;
+$default : #444444;
+$default-info : #0f9aee;
+$default-light :#ffffff;
+$default-purple: $default-purple;
 
 
 // Others
 // ---------------------------------------------------------
 
-$collapsed-size       : 70px;
-$header-height        : 65px;
-$offscreen-size       : 280px;
-
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+$collapsed-size : 70px;
+$header-height : 65px;
+$offscreen-size : 280px;

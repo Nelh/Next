@@ -1,119 +1,63 @@
-<div class="sidebar shadow bg-light">
+<div class="sidebar">
     <div class="sidebar-inner">
       <div class="sidebar-logo">
         <div class="d-flex align-items-center flex-nowrap">
-          <div class="">
-            <a class="sidebar-link text-decoration-none" href="{{ site.baseurl }}/index.html">
-              <div class="d-flex align-items-center flex-nowrap">
-                <div class="">
-                  <div class="logo d-flex align-items-center justify-content-center">
-                    <!-- <img src="{{ site.baseurl }}/assets/images/logo.png" height="40"> -->
-                    <svg version="1.1" id="logo" class="navbar-brand-img brand-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120" xml:space="preserve">
-                      <g>
-                        <polygon class="st0" points="78,105 15,105 24,87 87,87 	" />
-                        <polygon class="st0" points="96,69 33,69 42,51 105,51 	" />
-                        <polygon class="st0" points="78,33 15,33 24,15 87,15 	" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <div class="">
-                  <div class="logo-text d-flex align-items-center justify-content-center">
-                    <!-- Alliance -->
-                  </div>
+          <a class="sidebar-link text-decoration-none" href="#">
+            <div class="d-flex align-items-center flex-nowrap">
+              <div class="logo-sm">
+                <div class="logo d-flex align-items-center justify-content-center">
+                  <img src="{{ site.baseurl }}/assets/images/next.png">
                 </div>
               </div>
-            </a>
-          </div>
+              <div class="logo-text d-flex align-items-center justify-content-center">
+                <img src="{{ site.baseurl }}/assets/images/next-full.png">
+              </div>
+            </div>
+          </a>
           <div class="">
             <div class="mobile-toggle sidebar-toggle">
               <a href="#" class="text-decoration-none">
-                <i class="ti-arrow-circle-left"></i>
+                <i class="far fa-times-circle"></i>
               </a>
             </div>
           </div>
         </div>
       </div>
 
-      <ul class="nav-custom nav-pills sidebar-menu scrollable position-relative pt-3">
-
-        <li class="nav-item">
-          <a href="#">
-            <span class="icon-holder">
-              <i class="ti-layout-line-solid"></i>
-            </span>
-            <span class="title fw-bold">Pages</span>
-          </a>
-        </li>
+      <ul class="sidebar-menu scrollable position-relative pt-3">
 
         <li class="nav-item dropdown">
-          <a class="nav-link wave-effect dropdown-toggle" href="#">
+          <a class="nav-link wave-effect" href="#">
             <span class="icon-holder">
-              <i class="ti-home"></i>
+              <i class="fal fa-home"></i>
             </span>
             <span class="title">Dashboard</span>
-            <span class="arrow">
-              <i class="ti-angle-right"></i>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="#">
+            <span class="icon-holder">
+              <i class="far fa-terminal"></i>
             </span>
+            <span class="title">Code</span>
           </a>
-          <ul class="dropdown-menu">
-            <li class="nav-item dropdown">
-              <a class="sidebar-link wave-effect dropdown-toggle" href="{{ site.baseurl }}/html/dashboard/systems.html">
-                <span class="title">Default</span>
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="sidebar-link wave-effect dropdown-toggle" href="#">
-                <span class="title">Analytics</span>
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="sidebar-link wave-effect dropdown-toggle" href="#">
-                <span class="title">SaaS</span>
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="sidebar-link wave-effect dropdown-toggle" href="#">
-                <span class="title">Social</span>
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="sidebar-link wave-effect dropdown-toggle" href="#">
-                <span class="title">Crypto</span>
-              </a>
-            </li>
-          </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link wave-effect dropdown-toggle" href="#">
+          <a class="nav-link wave-effect" href="#">
             <span class="icon-holder">
-                <i class="ti-files"></i>
-              </span>
+              <i class="fal fa-folder-open"></i>
+            </span>
             <span class="title">Pages</span>
-            <span class="arrow">
-                <i class="ti-angle-right"></i>
-              </span>
           </a>
-          <ul class="dropdown-menu">             
-            <li>
-              <a class="sidebar-link" href="#">Profile</a>
-            </li>          
-            <li>
-              <a class="sidebar-link" href="#">Settings</a>
-            </li>          
-            <li>
-              <a class="sidebar-link" href="#">Clients</a>
-            </li>
-          </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link wave-effect dropdown-toggle" href="#">
             <span class="icon-holder">
-                <i class="ti-user"></i>
+                <i class="fas fa-fingerprint"></i>
               </span>
             <span class="title">Auth</span>
             <span class="arrow">
-                <i class="ti-angle-right"></i>
+                <i class="fas fa-angle-right"></i>
               </span>
           </a>
           <ul class="dropdown-menu">             
@@ -125,11 +69,11 @@
         <li class="nav-item dropdown">
           <a class="nav-link wave-effect dropdown-toggle" href="#">
             <span class="icon-holder">
-              <i class="ti-view-list-alt"></i>
+              <i class="fas fa-folder-plus"></i>
             </span>
             <span class="title">Multiple Levels</span>
             <span class="arrow">
-              <i class="ti-angle-right"></i>
+              <i class="fas fa-angle-right"></i>
             </span>
           </a>
           <ul class="dropdown-menu">

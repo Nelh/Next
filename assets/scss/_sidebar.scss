@@ -1,3 +1,38 @@
+// Page Container
+// ---------------------------------------------------------
+
+.container-wide {
+  min-height: 100vh;
+  padding-left: $offscreen-size;
+  transition: all 0.2s ease;
+
+  @include from($breakpoint-md) {
+    padding-left: $collapsed-size;
+  }
+
+  @include to($breakpoint-md) {
+    padding-left: 0;
+  }
+}
+
+// Collapsed State
+// ---------------------------------------------------------
+
+.is-collapsed {
+  .container-wide {
+    padding-left: $collapsed-size;
+
+    @include to($breakpoint-md) {
+      padding-left: 0;
+    }
+
+    @include from($breakpoint-md) {
+      padding-left: $offscreen-size;
+    }
+  }
+}
+
+
 // Sidebar
 // ---------------------------------------------------------
 
@@ -8,15 +43,16 @@
   top: 0;
   transition: all 0.2s ease;
   width: $offscreen-size;
+  background-color: $default;
+  color: $default-light;
   z-index: 9999;
 
   ul {
     list-style-type: none;
   }
 
-  @include between($breakpoint-md, $breakpoint-xl) {
+  @include from($breakpoint-md) {
     width: $collapsed-size;
-
     .sidebar-inner {
       .sidebar-logo {
         padding: 0;
@@ -62,6 +98,9 @@
       .sidebar-inner {
         .sidebar-logo {
           padding: 0 20px;
+          .logo-sm {
+            display: none;
+          }
         }
 
         .sidebar-menu {
@@ -111,11 +150,12 @@
 .sidebar-logo {
   line-height: 0;
   padding: 0 20px;
-  transition: all 0.2s ease;
+  // transition: all 0.2s ease;
 
   a {
     display: inline-block;
     width: 100%;
+    color: #fff;
 
     .logo {
       background-position: center left;
@@ -123,10 +163,15 @@
       display: inline-block;
       min-height: calc(#{$header-height} - 1px);
       width: 70px;
+      img {
+        width: 30px;
+      }
     }
-
     .logo-text {
-      color: $grey-900;
+      min-height: calc(#{$header-height} - 1px);
+      img {
+        width: 120px;
+      }
     }
   }
 
@@ -137,14 +182,14 @@
     line-height: calc(#{$header-height} - 1px);
 
     a {
-      color: $default-dark;
+      color: $default-light;
     }
 
     @include to($breakpoint-md) {
       display: inline-block;
     }
 
-    @include between($breakpoint-md, $breakpoint-xl) {
+    @include from($breakpoint-md) {
       display: none;
     }
   }
@@ -154,7 +199,6 @@
 // ---------------------------------------------------------
 
 .sidebar-menu {
-  @include clearfix;
   height: calc(100vh - #{$header-height});
   list-style: none;
   margin: 0;
@@ -180,6 +224,7 @@
     }
   }
 
+
   li {
     position: relative;
 
@@ -198,7 +243,7 @@
 
       &.open {
         > a {
-          color: $default-dark;
+          color: $default-light;
 
           .icon-holder {
             color: $default-info;
@@ -224,13 +269,14 @@
     }
 
     a {
-      color: $default-dark;
+      color: $default-light;
       transition: all 0.3s ease;
 
       &:hover,
       &:focus {
-        color: $default-dark;
+        color: $default-light;
         text-decoration: none;
+        background-color: $default-purple;
 
         // .icon-holder {
         //   color: $default-info;
@@ -262,13 +308,13 @@
               &:hover,
               &:focus {
                 background-color: transparent;
-                color: $default-dark;
+                color: $default-light;
               }
             }
 
             &.actived {
               a {
-                color: $default-dark;
+                color: $default-light;
               }
             }
           }
@@ -339,43 +385,9 @@
           }
         }
       }
-
-      // &:hover {
-        // width: $offscreen-size;
-
-      //   .sidebar-inner {
-      //     .sidebar-logo {
-      //       padding: 0 20px;
-      //     }
-
-      //     .sidebar-menu {
-      //       > li {
-      //         > a {
-      //           .title {
-      //             display: inline-block;
-      //           }
-      //         }
-      //       }
-
-      //       li {
-      //         &.dropdown {
-      //           .arrow {
-      //             opacity: 1;
-      //           }
-      //         }
-
-      //         &.open {
-      //           > ul.dropdown-menu {
-      //             display: block !important;
-      //           }
-      //         }
-      //       }
-      //     }
-      //   }
-      // }
     }
 
-    @include between($breakpoint-md, $breakpoint-xl) {
+    @include from($breakpoint-md) {
       width: $offscreen-size;
 
       .sidebar-inner {
@@ -411,6 +423,16 @@
                 display: block !important;
               }
             }
+          }
+        }
+      }
+    }
+
+    @include from($breakpoint-xs) {
+      .sidebar-inner {
+        .sidebar-logo {
+          .logo-sm {
+            display: none;
           }
         }
       }

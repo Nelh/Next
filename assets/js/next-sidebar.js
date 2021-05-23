@@ -1,7 +1,3 @@
-// ------------------------------------------------------
-// @Sidebar
-// ------------------------------------------------------
-  
 $(function () {
     // Sidebar links
     $('.sidebar .sidebar-menu li a').on('click', function () {
@@ -68,18 +64,6 @@ $(function () {
       $('.app').toggleClass('is-collapsed');
       e.preventDefault();
     });
-  
-    /**
-     * Wait untill sidebar fully toggled (animated in/out)
-     * then trigger window resize event in order to recalculate
-     * masonry layout widths and gutters.
-     */
-    // $('#sidebar-toggle').click(e => {
-    //   e.preventDefault();
-    //   setTimeout(() => {
-    //     window.dispatchEvent(window.e);
-    //   }, 300);
-    // });
 }());
 
 // ------------------------------------------------------
@@ -106,25 +90,3 @@ $(function () {
     e.preventDefault();
   });
 }());
-
-
-// ------------------------------------------------------
-// @Popover & Tooltips
-// ------------------------------------------------------
-// Popover
-$(function() {
-  $('[data-bs-toggle="popover"]').popover()
-});
-// Tooltips
-$(function() {
-  $('[data-bs-toggle="tooltip"]').tooltip();
-});
-
-$(function () {
-  // Wow.js
-  new WOW().init();
-
-  // Waves.js
-  Waves.attach('.wave-effect', ['waves-block']);
-  Waves.init();
-});
