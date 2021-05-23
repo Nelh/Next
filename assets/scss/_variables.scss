@@ -7,102 +7,24 @@ $breakpoint-md : 992px;
 $breakpoint-sm : 768px;
 $breakpoint-xs : 0;
 
-$breakpoints: (
-  "xl\\+" "screen and (min-width: #{$breakpoint-xl})",
-  "lg\\+" "screen and (min-width: #{$breakpoint-lg})",
-  "md\\+" "screen and (min-width: #{$breakpoint-md})",
-  "sm\\+" "screen and (min-width: #{$breakpoint-sm})",
-  "xs\\+" "screen and (min-width: #{$breakpoint-xs})",
-
-  "xl-" "screen and (max-width: #{$breakpoint-xl - 1px})",
-  "lg-" "screen and (max-width: #{$breakpoint-lg - 1px})",
-  "md-" "screen and (max-width: #{$breakpoint-md - 1px})",
-  "sm-" "screen and (max-width: #{$breakpoint-sm - 1px})",
-
-  "lg" "screen and (min-width: #{$breakpoint-lg - 1px}) and (max-width: #{$breakpoint-xl - 1px})",
-  "md" "screen and (min-width: #{$breakpoint-md - 1px}) and (max-width: #{$breakpoint-lg - 1px})",
-  "sm" "screen and (min-width: #{$breakpoint-sm - 1px}) and (max-width: #{$breakpoint-md - 1px})",
-);
-
-// Fonts
-// ---------------------------------------------------------
-
-$font-primary:
-'Open Sans', Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-$font-secondary: $font-primary;
-$font-size-base:              0.9rem;
-
 // Greyscale Colors
 // ---------------------------------------------------------
 
-
-$grey-100             : #f9fafb;
-$grey-200             : #f2f3f5;
-$grey-300             : #e6eaf0;
-$grey-400             : #d3d9e3;
-$grey-500             : #b9c2d0;
-$grey-600             : #7c8695;
-$grey-700             : #72777a;
-$grey-800             : #565a5c;
 $grey-900             : #313435;
-
-$grey-colors-alt: (
-  grey-100 : #f9fafb,
-  grey-200 : #f2f3f5,
-  grey-300 : #e6eaf0,
-  grey-400 : #d3d9e3,
-  grey-500 : #b9c2d0,
-  grey-600 : #7c8695,
-  grey-700 : #72777a,
-  grey-800 : #565a5c,
-  grey-900 : #313435,
-);
 
 // Default Colors
 // ---------------------------------------------------------
 
-$default-danger       : #ff3c7e;
-$default-dark         : #313435;
-$default-grey         : #565a5c;
+$default-dark         : #444444;
 $default-info         : #0f9aee;
-$default-primary      : #7774e7;
-$default-success      : #37c936;
-$default-text-color   : #72777a;
-$default-warning      : #fc0;
-$default-white        : #fff;
 
-// Inverted Colors
-// ---------------------------------------------------------
-
-$inverse-danger       : lighten($default-danger, 35%);
-$inverse-info         : lighten($default-info, 45%);
-$inverse-primary      : lighten($default-primary, 30%);
-$inverse-success      : lighten($default-success, 45%);
-$inverse-warning      : lighten($default-warning, 45%);
 
 // Others
 // ---------------------------------------------------------
 
-$border-color         : #e6ecf5;
 $collapsed-size       : 70px;
 $header-height        : 65px;
 $offscreen-size       : 280px;
-$side-nav-dark        : #313644;
-$side-nav-dark-border : rgba(120, 130, 140, 0.3);
-$side-nav-dark-font   : #99abb4;
 
-// Header Themes
-// ---------------------------------------------------------
 
-$theme-danger         : #f53f61;
-$theme-dark           : lighten($side-nav-dark, 10%);
-$theme-info           : $default-info;
-$theme-primary        : $default-primary;
-$theme-success        : desaturate($default-success, 5%);
-
-// Borders
-// ---------------------------------------------------------
-
-$border-width: 1px;
-$border-color: rgba(0, 0, 0, 0.0625);
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');

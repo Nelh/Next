@@ -5,19 +5,27 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{% if page.title == "Home" %}{{ site.title }} &middot; {{ site.tagline }}{% else %} {{ page.title }} &middot; {{ site.title }} {% endif %}</title>
-
-    <!-- <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/vendor/bootstrap.min.css"> -->
-    {% if page.customCSS %}{% for customCSSFile in page.customCSS %}
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ customCSSFile }}">
-    {% endfor %}{% endif %}
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 </head>
     
 <body class="app">
-    <div id='loader'>
+    <div id="loader">
         <div class="spinner"></div>
     </div>
+    <div class="setting-widget shadow d-none d-lg-block">
+        <div><button type="button" class="btn btn-light btn-block wave-effect mb-2" id="modeSwitcher" data-mode="light"><i class="ti-shine"></i></button></div>
+        <div><button type="button" class="btn btn-light btn-block wave-effect mb-2 offcanvas-toggle"><i class="ti-settings"></i></button></div>
+        <div><a href="#" class="btn btn-light text-primary btn-block wave-effect" target="_blank"><i class="ti-book"></i></a></div>
+    </div>
+    <div>
+        {% include _sidebar.html %}
+        <div class="container-wide">
+            {% include _navbar.html %}
+            {{ content }}
+        </div>
+    </div>
 
+    
     <script>
         window.addEventListener('load', function load() {
             const loader = document.getElementById('loader');
@@ -26,18 +34,10 @@
             }, 300);
         });
     </script>
-    <div>
-        {% include _sidebar.html %}
-        <div class="container-wide">
-            {% include _navbar.html %}
-            {{ content }}
-        </div>
-    </div>
     <script src="{{ site.baseurl }}/assets/js/vendor/jquery-3.5.1.min.js"></script>  
     <script src="{{ site.baseurl }}/assets/js/vendor/popper.min.js"></script>
     <script src="{{ site.baseurl }}/assets/js/vendor/bootstrap.min.js"></script>  
     <script src="{{ site.baseurl }}/assets/js/vendor/library.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/vendor/font-awesome.js"></script>
     <script src="{{ site.baseurl }}/assets/js/vendor/perfect-scrollbar.min.js"></script>
     {% if page.customJs %}{% for customJsFile in page.customJs %}
     <script src="{{ site.baseurl }}/assets/js/{{ customJsFile }}"></script>

@@ -20,78 +20,44 @@ customJs:
 ---
 
 <!-- ### $App Screen Content ### -->
-<main class='main-content bgc-grey-100'>
+<main class='main-content'>
   <div id='mainContent'>
     <div class="full-container">
+      <!-- <nav class="nav-custom navbar bg-light">
+        <div class="container-fluid py-2">
+          <ul class="nav-left mb-0 px-1">
+            <div>
+              <ul>
+                <li><i class="ti-email text-success"></i> 3 messages</li>
+                <li><i class="ti-alert text-danger"></i> 7 Sync Update failed...</li>
+              </ul>
+            </div>
+          </ul>
+          <ul class="nav-right mb-0">
+            <div class="btn-group dropdown">
+              <button type="button" class="btn btn-sm border-0 shadow wave-effect btn-outline-light dropdown-toggle text-dark" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="ti-calendar"></i> Today
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><button type="button" class="dropdown-item">Action</button></li>
+                <li><button type="button" class="dropdown-item">Another action</button></li>
+                <li><button type="button" class="dropdown-item">Something else here</button></li>
+              </ul>
+            </div>
+            <button type="button" class="btn btn-sm border-0 shadow wave-effect btn-outline-light me-2 text-dark"><i class="ti-filter"></i></button>
+            <button type="button" class="btn btn-sm border-0 shadow wave-effect btn-outline-light me-2 text-dark"><i class="ti-cloud-up"></i></button>
+            <button type="button" class="btn btn-sm border-0 shadow wave-effect btn-primary"><i class="ti-bookmark-alt"></i> New Account</button>
+          </ul>
+        </div>
+      </nav> -->
+
       <div class="container-fluid mt-4">
         <div class="row justify-content-center">
           <div class="col-12">
             <div class="row">
-              <div class="col-lg-4">
-                <div class="card eq-card mb-4">
-                  <div class="card-body mb-n3">
-                    <div class="row items-align-baseline h-100">
-                      <div class="col-lg-6 my-3">
-                        <p class="mb-0"><strong class="mb-0 text-uppercase text-muted">Earning</strong></p>
-                        <h3>$2,562</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                      </div>
-                      <div class="col-lg-6 my-4 text-center">
-                        <div lass="chart-box mx-4">
-                          <div id="radialbarWidget"></div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6 border-top py-3">
-                        <p class="mb-1"><strong class="text-muted">Cost</strong></p>
-                        <h4 class="mb-0">108</h4>
-                        <p class="small text-muted mb-0"><span>37.7% Last week</span></p>
-                      </div> <!-- .col -->
-                      <div class="col-lg-6 border-top py-3">
-                        <p class="mb-1"><strong class="text-muted">Revenue</strong></p>
-                        <h4 class="mb-0">1168</h4>
-                        <p class="small text-muted mb-0"><span>-18.9% Last week</span></p>
-                      </div> <!-- .col -->
-                    </div>
-                  </div> <!-- .card-body -->
-                </div> <!-- .card -->
-                <div class="card eq-card mb-4">
-                  <div class="card-header bg-white">
-                    <div class="row align-items-center">
-                      <div class="col">
-                        <h3 class="h6 mb-0">Users</h3>
-                      </div>
-                      <div class="col-auto">
-                        <a class="small text-muted" href="#!">View all</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <div class="d-flex mb-2">
-                      <div class="flex-fill pt-2">
-                        <p class="mb-0 text-muted">Total</p>
-                        <h4 class="mb-0">108</h4>
-                        <span class="small text-muted">+37.7%</span>
-                      </div>
-                      <div class="flex-fill chart-box mb-n1">
-                        <div id="barChartWidget"></div>
-                      </div>
-                    </div> <!-- .d-flex -->
-                    <div class="row border-top">
-                      <div class="col-lg-6 pt-4">
-                        <h6 class="mb-0">108 <span class="small text-muted">+37.7%</span></h6>
-                        <p class="mb-0 text-muted">Cost</p>
-                      </div>
-                      <div class="col-lg-6 pt-4">
-                        <h6 class="mb-0">1168 <span class="small text-muted">-18.9%</span></h6>
-                        <p class="mb-0 text-muted">Revenue</p>
-                      </div>
-                    </div> <!-- .row -->
-                  </div> <!-- .card-body -->
-                </div> <!-- .card -->
-              </div>
-              <div class="col-lg-8">
+              <div class="col-lg-6">
                 <div class="row">
-                  <div class="col-lg-4 mb-4">
+                  <div class="col-md-6 mb-4">
                     <div class="card">
                       <div class="card-body">
                         <div class="row align-items-center">
@@ -111,7 +77,7 @@ customJs:
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 mb-4">
+                  <div class="col-md-6 mb-4">
                     <div class="card">
                       <div class="card-body">
                         <div class="row align-items-center">
@@ -133,7 +99,26 @@ customJs:
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 mb-4">
+                  <div class="col-md-6 mb-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <p class="small text-muted mb-0">Network</p>
+                            <h4 class="mb-0"><i class="fas fa fa-caret-up text-success"></i> 65%</h4>
+                            <div class="text-lift-up opacity-75">
+                              <i class="fas fa fa-caret-down text-danger"></i>
+                              <span class="text-secondary mx-1 text-monospace"><span class="count">14</span>%<span>
+                            </div>
+                          </div>
+                          <div class="col-5">
+                            <div id="gauge3" class="gauge-container"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
                     <div class="card">
                       <div class="card-body">
                         <div class="row align-items-center">
@@ -161,89 +146,6 @@ customJs:
               </div> <!-- /. col -->
             </div> <!-- end section -->
             <div class="row">
-              <div class="col-lg-8">
-                <div class="card eq-card mb-4">
-                  <div class="card-header bg-white">
-                    <a href="#" class="text-muted float-end">View all</a>
-                    <h6 class="title">USA</h6>
-                  </div>
-                  <div class="card-body">
-                    <div class="text-dark pb-3">Top Sale by States</div>
-                    <div class="row">
-                      <div class="col-xl-7 col-lg-12">
-                        <div class="map-box" style="position: relative; width: 350px; min-height: 130px; margin:0 auto;">
-                          <div id="dataMapUSA"></div>
-                        </div>
-                      </div>
-                      <div class="col-xl-5 col-lg-12 page-todo">
-                        <div class="tasks pt-4">
-                          <div class="task-list p-0">
-                            <div class="priority default"><span>Sales Revenue</span></div>
-                            <div class="task default last">
-                              <div class="desc">
-                                <div class="title">California</div>
-                                <div>54,060 items sold this month in the california...</div>
-                              </div>
-                            </div>
-                            <div class="clearfix"></div>
-                          </div>
-                        </div>
-                        <p><small>Last Month Check</small>
-                          <h4><i class="fas fa fa-long-arrow-alt-up"></i> 6.5% ($2,562.30)</h4>
-                        </p>
-                        <a href="#"
-                          class="btn btn-primary bg-default btn-block btn-lg border-0 rounded-0 mt-4 shadow wave-effect"><i
-                            class="fas fa-file-pdf t-plus-1 fa-fw fa-lg"></i> Check full Report</a>
-                      </div>
-                      <div class="col-lg-12 mt-4">
-                        <div class="row">
-                          <div class="col-lg-6">
-                            <div class="tile-progress">
-                              <div class="tile-header">
-                                <div class="badge badge-secondary bg-default mt-2 ml-2 p-1">Today Sales</div>
-                                <p class="mb-0"><strong class="mb-0 text-uppercase text-muted">Today</strong></p>
-                                <h3 class="mb-0">$2,562.30</h3>
-                                <p class="text-muted">+18.9% Last week</p>
-                                <div class="chart-box mt-n5">
-                                  <div id="lineChartWidget"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-lg-6">
-                            <div class="tile-progress">
-                              <div class="tile-header">
-                                <div id="radialbar"></div>
-                                <div class="row">
-                                  <div class="col-6 text-center">
-                                    <p class="small text-uppercase text-muted mb-0">Yesterday</p>
-                                    <strong class="text-uppercase">126</strong>
-                                    <p class="small text-muted mb-2">+5.5%</p>
-                                  </div>
-                                  <div class="col-6 text-center">
-                                    <p class="small text-uppercase text-muted mb-0">Today</p>
-                                    <strong class="text-uppercase">89</strong>
-                                    <p class="small text-muted mb-2">-5.5%</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="tile-progressbar">
-                                <span data-fill="23.2%" style="width: 23.2%;"></span>
-                              </div>
-                              <div class="tile-footer">
-                                <h4>
-                                  <i class="fas fa fa-caret-down text-danger"></i><span class="count text-danger">3.2</span>%
-                                  increase
-                                </h4>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div class="col-lg-4">
                 <div class="card mb-4">
                   <div class="card-header bg-white">

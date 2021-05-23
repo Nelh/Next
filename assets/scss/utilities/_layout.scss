@@ -1,0 +1,13 @@
+@media (min-width: $breakpoint-md) {
+    .boxed {
+        max-width: 1200px;
+        position: relative;
+        border: 1px solid #eee;
+        margin: 0 auto;
+
+        // .nav-custom-fixed {
+        //     position: relative !important;
+        //     width: 100%;
+        // }
+    }
+}

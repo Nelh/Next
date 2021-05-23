@@ -43,7 +43,12 @@ $(function () {
           });
       }
     });
-  
+
+    $('.offcanvas-toggle').click(function(e) {
+        e.preventDefault();
+        $('.offcanvas-menu').toggleClass('open');
+    });
+
     // Sidebar Activity Class
     const sidebarLinks = $('.sidebar').find('.sidebar-link');
   
@@ -69,12 +74,12 @@ $(function () {
      * then trigger window resize event in order to recalculate
      * masonry layout widths and gutters.
      */
-    $('#sidebar-toggle').click(e => {
-      e.preventDefault();
-      setTimeout(() => {
-        window.dispatchEvent(window.e);
-      }, 300);
-    });
+    // $('#sidebar-toggle').click(e => {
+    //   e.preventDefault();
+    //   setTimeout(() => {
+    //     window.dispatchEvent(window.e);
+    //   }, 300);
+    // });
 }());
 
 // ------------------------------------------------------
@@ -112,7 +117,7 @@ $(function() {
 });
 // Tooltips
 $(function() {
-  $('[data-bs-toggle="tooltip"]').tooltip()
+  $('[data-bs-toggle="tooltip"]').tooltip();
 });
 
 $(function () {

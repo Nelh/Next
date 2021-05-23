@@ -1,9 +1,9 @@
-<nav class="nav navbar navbar-light bg-light">
+<nav class="nav-custom nav-custom-fixed navbar navbar-light shadow bg-light">
     <div class="nav-container">
       <ul class="nav-left">
         <li>
           <a id="sidebar-toggle" class="sidebar-toggle wave-effect" href="#">
-            <i class="ti-menu"></i>
+            <i class="ti-align-left"></i>
           </a>
         </li>
         <li class="search-box">
@@ -17,7 +17,175 @@
         </li>
       </ul>
       <ul class="nav-right">
-
+        <li>
+          <a class="wave-effect" href="#" id="app-menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="ti-layout-grid2"></i> 
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="app-menu">
+            <li><a class="dropdown-item" href="#">Action1</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="wave-effect" href="#" id="notifications" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="ti-comment"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notifications">
+            <li><a class="dropdown-item" href="#">Action1</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="d-flex align-items-center wave-effect dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="rounded-icon bg-secondary">
+              <i class="ti-user text-light"></i>
+            </span> 
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+            <li><button class="dropdown-item" type="button">Action</button></li>
+            <li><button class="dropdown-item" type="button">Another action</button></li>
+            <li><button class="dropdown-item" type="button">Something else here</button></li>
+          </ul>
+        </li>
       </ul>
     </div>
 </nav>
+
+<aside class="offcanvas-menu">
+  <div class="offcanvas-button">
+      <a href="#" class="btn wave-effect offcanvas-toggle font-20"><span aria-hidden="true">&times;</span></a>
+  </div>
+  <div>
+      <div class="card-header">
+          <h5 class="card-title mb-0"><i class="feather icon-settings"></i> Settings</h5>
+      </div>
+      <div class="card-body">
+          <div class="alert alert-info">
+              Customize sidebar position, color scheme and layout type.
+          </div>
+          <hr>
+          <h6 class="mb-3">Layouts</h6>
+          <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="SwitchCheckDefaultLayout">
+              <label class="form-check-label" for="SwitchCheckDefaultLayout">Default Layout</label>
+          </div>
+          <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="SwitchCheckBoxedLayout">
+              <label class="form-check-label" for="SwitchCheckBoxedLayout">Boxed Layout</label>
+          </div>
+          <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="SwitchCheckHorizontalLayout">
+              <label class="form-check-label" for="SwitchCheckHorizontalLayout">Horizontal Layout</label>
+          </div>
+          <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="SwitchCheckMinimalLayout">
+              <label class="form-check-label" for="SwitchCheckMinimalLayout">Minimal Layout</label>
+          </div>
+
+          <div class="color-scheme mt-4">
+              <h6>Color Scheme</h6>
+              <div class="row justify-content-center p-3">
+                  <div class="col-12">
+                      <div class="row">
+                          <div class="col-md-12 mb-2">
+                              <div class="card border-0 bg-transparent">
+                                  <div class="card-body p-0">
+                                      <div class="row no-gutters form-check form-switch">
+                                          <input class="form-check-input" type="checkbox" id="SwitchCheckThemeDefault" checked>
+                                          <label class="form-check-label" for="SwitchCheckThemeDefault">Default theme</label>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6 mb-2">
+                              <div class="card border-0 bg-transparent">
+                                  <div class="card-body p-0">
+                                      <div class="row no-gutters form-check form-switch">
+                                          <input class="form-check-input" type="checkbox" id="SwitchCheckThemePrimary">
+                                          <label class="form-check-label" for="SwitchCheckThemePrimary">Primary</label>
+                                      </div>
+                                      <div class="row no-gutters bg-primary text-white">
+                                          <div class="col-auto p-1 text-right"><small
+                                                  class="badge badge-pill text-white bg-primary-dark">#007bff</small>
+                                          </div>
+                                      </div>
+                                      <div class="row no-gutters">
+                                          <div class="col p-2 bg-primary-lighter"></div>
+                                          <div class="col p-2 bg-primary-light"></div>
+                                          <div class="col p-2 bg-primary-dark"></div>
+                                          <div class="col p-2 bg-primary-darker"></div>
+                                      </div>
+                                  </div> <!-- /. card-body -->
+                              </div> <!-- /. card -->
+                          </div> <!-- /. col -->
+                          <div class="col-md-6 mb-2">
+                              <div class="card border-0 bg-transparent">
+                                  <div class="card-body p-0">
+                                      <div class="row no-gutters form-check form-switch">
+                                          <input class="form-check-input" type="checkbox" id="SwitchCheckThemeSuccess">
+                                          <label class="form-check-label" for="SwitchCheckThemeSuccess">Success</label>
+                                      </div>
+                                      <div class="row no-gutters bg-success text-white">
+                                          <div class="col-auto p-1 text-right"><small
+                                                  class="badge badge-pill text-white bg-success-dark">#28a745</small>
+                                          </div>
+                                      </div>
+                                      <div class="row no-gutters">
+                                          <div class="col p-2 bg-success-lighter"></div>
+                                          <div class="col p-2 bg-success-light"></div>
+                                          <div class="col p-2 bg-success-dark"></div>
+                                          <div class="col p-2 bg-success-darker"></div>
+                                      </div>
+                                  </div> <!-- /. card-body -->
+                              </div> <!-- /. card -->
+                          </div> <!-- /. col -->
+                          <div class="col-md-6 mb-2">
+                              <div class="card border-0 bg-transparent">
+                                  <div class="card-body p-0">
+                                      <div class="row no-gutters form-check form-switch">
+                                          <input class="form-check-input" type="checkbox" id="SwitchCheckThemeWarning">
+                                          <label class="form-check-label" for="SwitchCheckThemeWarning">Warning</label>
+                                      </div>
+                                      <div class="row no-gutters bg-warning text-white">
+                                          <div class="col-auto p-1 text-right"><small
+                                                  class="badge badge-pill text-white bg-warning-dark">#28a745</small>
+                                          </div>
+                                      </div>
+                                      <div class="row no-gutters">
+                                          <div class="col p-2 bg-warning-lighter"></div>
+                                          <div class="col p-2 bg-warning-light"></div>
+                                          <div class="col p-2 bg-warning-dark"></div>
+                                          <div class="col p-2 bg-warning-darker"></div>
+                                      </div>
+                                  </div> <!-- /. card-body -->
+                              </div> <!-- /. card -->
+                          </div> <!-- /. col -->
+                          <div class="col-md-6 mb-2">
+                              <div class="card border-0 bg-transparent">
+                                  <div class="card-body p-0">
+                                      <div class="row no-gutters form-check form-switch">
+                                          <input class="form-check-input" type="checkbox" id="SwitchCheckThemeDanger">
+                                          <label class="form-check-label" for="SwitchCheckThemeDanger">Danger</label>
+                                      </div>
+                                      <div class="row no-gutters bg-danger text-white">
+                                          <div class="col-auto p-1 text-right"><small
+                                                  class="badge badge-pill text-white bg-danger-dark">#28a745</small></div>
+                                      </div>
+                                      <div class="row no-gutters">
+                                          <div class="col p-2 bg-danger-lighter"></div>
+                                          <div class="col p-2 bg-danger-light"></div>
+                                          <div class="col p-2 bg-danger-dark"></div>
+                                          <div class="col p-2 bg-danger-darker"></div>
+                                      </div>
+                                  </div> <!-- /. card-body -->
+                              </div> <!-- /. card -->
+                          </div> <!-- /. col -->
+                      </div> <!-- end section -->
+                  </div> <!-- .col-12 -->
+              </div> <!-- .row -->
+          </div>
+      </div>
+  </div>
+</aside>

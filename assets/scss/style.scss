@@ -1,10 +1,15 @@
-// @import "bootswatch/dist/materia/variables";
+
+@import "bootstrap/scss/bootstrap";
+
+// @import "bootswatch/dist/cosmo/variables";
 // @import "bootstrap/scss/bootstrap";
-// @import "bootswatch/dist/materia/bootswatch";
+// @import "bootswatch/dist/cosmo/bootswatch";
 
 @import '_variables';
 @import '_mixins';
-@import 'customs/index';
+@import 'utilities/index';
 @import '_library';
+@import 'custom';
 
-@import "bootstrap/scss/bootstrap";
+
+
